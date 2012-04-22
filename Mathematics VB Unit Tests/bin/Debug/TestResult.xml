@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.dll" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-06-06" time="15:56:49">
+  <environment nunit-version="2.5.5.10112" clr-version="2.0.50727.4927" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.5.5\bin\net-2.0" machine-name="AAMCT-WIN7" user="Aaron" user-domain="aamct-win7" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.dll" executed="True" result="Success" success="True" time="0.094" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Mathematics_Unit_Tests" executed="True" result="Success" success="True" time="0.078" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Algebra" executed="True" result="Success" success="True" time="0.078" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="FiniteStructures" executed="True" result="Success" success="True" time="0.078" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="FiniteMagma_Tests" executed="True" result="Success" success="True" time="0.078" asserts="0">
+                    <results>
+                      <test-case name="Mathematics_Unit_Tests.Algebra.FiniteStructures.FiniteMagma_Tests.ConstructorNew" executed="True" result="Success" success="True" time="0.031" asserts="0" />
+                      <test-case name="Mathematics_Unit_Tests.Algebra.FiniteStructures.FiniteMagma_Tests.MethodApplyOperation" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+                      <test-case name="Mathematics_Unit_Tests.Algebra.FiniteStructures.FiniteMagma_Tests.MethodSetOfSquareElements" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+                      <test-case name="Mathematics_Unit_Tests.Algebra.FiniteStructures.FiniteMagma_Tests.PropertyOperation" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Mathematics_Unit_Tests.Algebra.FiniteStructures.FiniteMagma_Tests.PropertyTheSet" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1296]D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.dll</TopNode>
+  <SelectedNode>[0-1037]Mathematics_Unit_Tests.Algebra.FiniteStructures.FiniteMagma_Tests</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1296]D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1297]Mathematics_Unit_Tests" Expanded="true" />
+    <Node UniqueName="[0-1298]Mathematics_Unit_Tests.Algebra" Expanded="true" />
+    <Node UniqueName="[0-1299]Mathematics_Unit_Tests.Algebra.FiniteStructures" Expanded="true" />
+    <Node UniqueName="[0-1037]Mathematics_Unit_Tests.Algebra.FiniteStructures.FiniteMagma_Tests" Expanded="true" />
+    <Node UniqueName="[0-1300]Mathematics_Unit_Tests.Common" Expanded="true" />
+    <Node UniqueName="[0-1301]Mathematics_Unit_Tests.Common.CommonFunctions_Tests" Expanded="true" />
+    <Node UniqueName="[0-1302]Mathematics_Unit_Tests.Common.Functions_Tests" Expanded="true" />
+    <Node UniqueName="[0-1303]Mathematics_Unit_Tests.Common.Set_Tests" Expanded="true" />
+    <Node UniqueName="[0-1304]Mathematics_Unit_Tests.Geometry" Expanded="true" />
+  </Nodes>
+</VisualState>

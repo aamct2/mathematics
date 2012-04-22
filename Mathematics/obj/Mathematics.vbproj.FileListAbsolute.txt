@@ -1,0 +1,7 @@
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Debug\Mathematics.dll
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Debug\Mathematics.pdb
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Debug\Mathematics.xml
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Debug\ResolveAssemblyReference.cache
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Debug\Mathematics.dll
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Debug\Mathematics.xml
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Debug\Mathematics.pdb

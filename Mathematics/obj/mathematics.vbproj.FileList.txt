@@ -1,0 +1,14 @@
+bin\Release\mathematics.dll
+bin\Release\mathematics.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\mathematics.dll
+obj\Release\mathematics.pdb
+bin\Release\Mathematics.xml
+obj\Release\Mathematics.xml
+bin\Debug\Mathematics.dll
+bin\Debug\Mathematics.pdb
+bin\Debug\Mathematics.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Mathematics.dll
+obj\Debug\Mathematics.xml
+obj\Debug\Mathematics.pdb

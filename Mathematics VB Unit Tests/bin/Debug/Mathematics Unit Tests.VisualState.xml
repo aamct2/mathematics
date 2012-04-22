@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]D:\aaron\Aaron's Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.nunit</TopNode>
+  <SelectedNode>[0-1142]Mathematics_Unit_Tests.Common.Zmod2_Tests.MethodSubtract</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]D:\aaron\Aaron's Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.nunit" Expanded="true">
+      <Nodes>
+        <Node UniqueName="[0-1187]D:\aaron\Aaron's Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.dll" Expanded="true">
+          <Nodes>
+            <Node UniqueName="[0-1188]Mathematics_Unit_Tests" Expanded="true">
+              <Nodes>
+                <Node UniqueName="[0-1189]Mathematics_Unit_Tests.Algebra" Expanded="true">
+                  <Nodes>
+                    <Node UniqueName="[0-1001]Mathematics_Unit_Tests.Algebra.Matrix_Tests">
+                      <Nodes>
+                        <Node UniqueName="[0-1002]Mathematics_Unit_Tests.Algebra.Matrix_Tests.ConstructorNew" />
+                        <Node UniqueName="[0-1003]Mathematics_Unit_Tests.Algebra.Matrix_Tests.ConstructorNewInteger" />
+                        <Node UniqueName="[0-1015]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodAdd" />
+                        <Node UniqueName="[0-1012]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodAddArgNull" />
+                        <Node UniqueName="[0-1014]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodAddHeightsNotEqual" />
+                        <Node UniqueName="[0-1013]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodAddWidthsNotEqual" />
+                        <Node UniqueName="[0-1016]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodClone" />
+                        <Node UniqueName="[0-1020]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodHadamardProduct" />
+                        <Node UniqueName="[0-1017]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodHadamardProductArgNull" />
+                        <Node UniqueName="[0-1019]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodHadamardProductHeightsDontMatch" />
+                        <Node UniqueName="[0-1018]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodHadamardProductWidthsDontMatch" />
+                        <Node UniqueName="[0-1021]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodIsSquare" />
+                        <Node UniqueName="[0-1022]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodMatrixMultiplyArgNull" />
+                        <Node UniqueName="[0-1023]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodMatrixMultiplyWidthHeightDontMatch" />
+                        <Node UniqueName="[0-1025]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodMinor" />
+                        <Node UniqueName="[0-1024]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodMultiply" />
+                        <Node UniqueName="[0-1027]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodScalarMultiply" />
+                        <Node UniqueName="[0-1026]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodScalarMultiplyArgNull" />
+                        <Node UniqueName="[0-1031]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodSubtract" />
+                        <Node UniqueName="[0-1028]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodSubtractArgNull" />
+                        <Node UniqueName="[0-1030]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodSubtractHeightsNotEqual" />
+                        <Node UniqueName="[0-1029]Mathematics_Unit_Tests.Algebra.Matrix_Tests.MethodSubtractWidthsNotEqual" />
+                        <Node UniqueName="[0-1032]Mathematics_Unit_Tests.Algebra.Matrix_Tests.OperatorAddition" />
+                        <Node UniqueName="[0-1035]Mathematics_Unit_Tests.Algebra.Matrix_Tests.OperatorMatrixMultiply" />
+                        <Node UniqueName="[0-1034]Mathematics_Unit_Tests.Algebra.Matrix_Tests.OperatorScalarMultiply" />
+                        <Node UniqueName="[0-1033]Mathematics_Unit_Tests.Algebra.Matrix_Tests.OperatorSubtraction" />
+                        <Node UniqueName="[0-1004]Mathematics_Unit_Tests.Algebra.Matrix_Tests.PropertyCount" />
+                        <Node UniqueName="[0-1006]Mathematics_Unit_Tests.Algebra.Matrix_Tests.PropertyHieght" />
+                        <Node UniqueName="[0-1009]Mathematics_Unit_Tests.Algebra.Matrix_Tests.PropertyItemGet" />
+                        <Node UniqueName="[0-1008]Mathematics_Unit_Tests.Algebra.Matrix_Tests.PropertyItemGetColumnGreaterThanWidth" />
+                        <Node UniqueName="[0-1007]Mathematics_Unit_Tests.Algebra.Matrix_Tests.PropertyItemGetRowGreaterThanHeight" />
+                        <Node UniqueName="[0-1011]Mathematics_Unit_Tests.Algebra.Matrix_Tests.PropertyItemSet" />
+                        <Node UniqueName="[0-1010]Mathematics_Unit_Tests.Algebra.Matrix_Tests.PropertyItemSetArgNull" />
+                        <Node UniqueName="[0-1005]Mathematics_Unit_Tests.Algebra.Matrix_Tests.PropertyWidth" />
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1036]Mathematics_Unit_Tests.Algebra.SquareMatrix_Tests">
+                      <Nodes>
+                        <Node UniqueName="[0-1037]Mathematics_Unit_Tests.Algebra.SquareMatrix_Tests.MethodDeterminant" />
+                        <Node UniqueName="[0-1038]Mathematics_Unit_Tests.Algebra.SquareMatrix_Tests.MethodIdentityMatrix" />
+                        <Node UniqueName="[0-1039]Mathematics_Unit_Tests.Algebra.SquareMatrix_Tests.MethodInverse2x2" />
+                        <Node UniqueName="[0-1040]Mathematics_Unit_Tests.Algebra.SquareMatrix_Tests.MethodInverse3x3" />
+                        <Node UniqueName="[0-1041]Mathematics_Unit_Tests.Algebra.SquareMatrix_Tests.MethodIsSymmetric" />
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1042]Mathematics_Unit_Tests.Algebra.Vector_Tests">
+                      <Nodes>
+                        <Node UniqueName="[0-1043]Mathematics_Unit_Tests.Algebra.Vector_Tests.ConstructorNew" />
+                        <Node UniqueName="[0-1044]Mathematics_Unit_Tests.Algebra.Vector_Tests.ConstructorNewInteger" />
+                        <Node UniqueName="[0-1045]Mathematics_Unit_Tests.Algebra.Vector_Tests.PropertyCount" />
+                        <Node UniqueName="[0-1048]Mathematics_Unit_Tests.Algebra.Vector_Tests.PropertyItemGet" />
+                        <Node UniqueName="[0-1046]Mathematics_Unit_Tests.Algebra.Vector_Tests.PropertyItemGetIndexOutOfRangeToBig" />
+                        <Node UniqueName="[0-1047]Mathematics_Unit_Tests.Algebra.Vector_Tests.PropertyItemGetIndexOutOfRangeToSmall" />
+                        <Node UniqueName="[0-1052]Mathematics_Unit_Tests.Algebra.Vector_Tests.PropertyItemSet" />
+                        <Node UniqueName="[0-1049]Mathematics_Unit_Tests.Algebra.Vector_Tests.PropertyItemSetArgNull" />
+                        <Node UniqueName="[0-1050]Mathematics_Unit_Tests.Algebra.Vector_Tests.PropertyItemSetIndexOutOfRangeToBig" />
+                        <Node UniqueName="[0-1051]Mathematics_Unit_Tests.Algebra.Vector_Tests.PropertyItemSetIndexOutOfRangeToSmall" />
+                      </Nodes>
+                    </Node>
+                  </Nodes>
+                </Node>
+                <Node UniqueName="[0-1190]Mathematics_Unit_Tests.Common" Expanded="true">
+                  <Nodes>
+                    <Node UniqueName="[0-1191]Mathematics_Unit_Tests.Common.CommonFunctions_Tests" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1053]Mathematics_Unit_Tests.Common.CommonFunctions_Tests.RealNumberFunction_Tests">
+                          <Nodes>
+                            <Node UniqueName="[0-1054]Mathematics_Unit_Tests.Common.CommonFunctions_Tests.RealNumberFunction_Tests.MethodCeiling" />
+                            <Node UniqueName="[0-1055]Mathematics_Unit_Tests.Common.CommonFunctions_Tests.RealNumberFunction_Tests.MethodFloor" />
+                            <Node UniqueName="[0-1056]Mathematics_Unit_Tests.Common.CommonFunctions_Tests.RealNumberFunction_Tests.MethodMax" />
+                            <Node UniqueName="[0-1057]Mathematics_Unit_Tests.Common.CommonFunctions_Tests.RealNumberFunction_Tests.MethodMin" />
+                            <Node UniqueName="[0-1058]Mathematics_Unit_Tests.Common.CommonFunctions_Tests.RealNumberFunction_Tests.MethodPow" />
+                            <Node UniqueName="[0-1059]Mathematics_Unit_Tests.Common.CommonFunctions_Tests.RealNumberFunction_Tests.MethodRound" />
+                            <Node UniqueName="[0-1060]Mathematics_Unit_Tests.Common.CommonFunctions_Tests.RealNumberFunction_Tests.MethodSign" />
+                            <Node UniqueName="[0-1061]Mathematics_Unit_Tests.Common.CommonFunctions_Tests.RealNumberFunction_Tests.MethodSqrt" />
+                            <Node UniqueName="[0-1062]Mathematics_Unit_Tests.Common.CommonFunctions_Tests.RealNumberFunction_Tests.MethodTruncate" />
+                          </Nodes>
+                        </Node>
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1063]Mathematics_Unit_Tests.Common.ComplexNumber_Tests">
+                      <Nodes>
+                        <Node UniqueName="[0-1064]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.ConstructorNew" />
+                        <Node UniqueName="[0-1065]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.ConstructorNewRealReal" />
+                        <Node UniqueName="[0-1072]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.MethodAbsoluteValue" />
+                        <Node UniqueName="[0-1073]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.MethodAdd" />
+                        <Node UniqueName="[0-1074]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.MethodCompareTo" />
+                        <Node UniqueName="[0-1075]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.MethodConjugate" />
+                        <Node UniqueName="[0-1077]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.MethodDivide" />
+                        <Node UniqueName="[0-1076]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.MethodDivideByZero" />
+                        <Node UniqueName="[0-1078]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.MethodSubtract" />
+                        <Node UniqueName="[0-1079]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.MethodToString" />
+                        <Node UniqueName="[0-1080]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.OperatorAddition" />
+                        <Node UniqueName="[0-1084]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.OperatorDivision" />
+                        <Node UniqueName="[0-1083]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.OperatorDivisionByZero" />
+                        <Node UniqueName="[0-1085]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.OperatorEquals" />
+                        <Node UniqueName="[0-1082]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.OperatorMultiplication" />
+                        <Node UniqueName="[0-1086]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.OperatorNotEquals" />
+                        <Node UniqueName="[0-1081]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.OperatorSubtraction" />
+                        <Node UniqueName="[0-1068]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.PopertyImaginaryPartGet" />
+                        <Node UniqueName="[0-1069]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.PopertyImaginaryPartSet" />
+                        <Node UniqueName="[0-1066]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.PopertyRealPartGet" />
+                        <Node UniqueName="[0-1067]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.PopertyRealPartSet" />
+                        <Node UniqueName="[0-1070]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.PropertyAdditiveIdentity" />
+                        <Node UniqueName="[0-1071]Mathematics_Unit_Tests.Common.ComplexNumber_Tests.PropertyMultiplicativeIdentity" />
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1087]Mathematics_Unit_Tests.Common.IntegerNumber_Tests">
+                      <Nodes>
+                        <Node UniqueName="[0-1088]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.ConstructorNew" />
+                        <Node UniqueName="[0-1089]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.ConstructorNewInteger" />
+                        <Node UniqueName="[0-1094]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.MethodAbsoluteValue" />
+                        <Node UniqueName="[0-1095]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.MethodAdd" />
+                        <Node UniqueName="[0-1096]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.MethodCompareTo" />
+                        <Node UniqueName="[0-1097]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.MethodSubtract" />
+                        <Node UniqueName="[0-1098]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.OperatorAddition" />
+                        <Node UniqueName="[0-1101]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.OperatorEquals" />
+                        <Node UniqueName="[0-1103]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.OperatorGreaterThan" />
+                        <Node UniqueName="[0-1105]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.OperatorGreaterThanOrEqual" />
+                        <Node UniqueName="[0-1104]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.OperatorLessThan" />
+                        <Node UniqueName="[0-1106]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.OperatorLessThanOrEqual" />
+                        <Node UniqueName="[0-1100]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.OperatorMultiplication" />
+                        <Node UniqueName="[0-1102]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.OperatorNotEquals" />
+                        <Node UniqueName="[0-1099]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.OperatorSubtraction" />
+                        <Node UniqueName="[0-1090]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.PopertyValueGet" />
+                        <Node UniqueName="[0-1091]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.PopertyValueSet" />
+                        <Node UniqueName="[0-1092]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.PropertyAdditiveIdentity" />
+                        <Node UniqueName="[0-1093]Mathematics_Unit_Tests.Common.IntegerNumber_Tests.PropertyMultiplicativeIdentity" />
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1107]Mathematics_Unit_Tests.Common.RealNumber_Tests">
+                      <Nodes>
+                        <Node UniqueName="[0-1108]Mathematics_Unit_Tests.Common.RealNumber_Tests.ConstructorNew" />
+                        <Node UniqueName="[0-1109]Mathematics_Unit_Tests.Common.RealNumber_Tests.ConstructorNewDouble" />
+                        <Node UniqueName="[0-1114]Mathematics_Unit_Tests.Common.RealNumber_Tests.MethodAbsoluteValue" />
+                        <Node UniqueName="[0-1115]Mathematics_Unit_Tests.Common.RealNumber_Tests.MethodAdd" />
+                        <Node UniqueName="[0-1116]Mathematics_Unit_Tests.Common.RealNumber_Tests.MethodCompareTo" />
+                        <Node UniqueName="[0-1118]Mathematics_Unit_Tests.Common.RealNumber_Tests.MethodDivide" />
+                        <Node UniqueName="[0-1117]Mathematics_Unit_Tests.Common.RealNumber_Tests.MethodDivideByZero" />
+                        <Node UniqueName="[0-1119]Mathematics_Unit_Tests.Common.RealNumber_Tests.MethodSubtract" />
+                        <Node UniqueName="[0-1120]Mathematics_Unit_Tests.Common.RealNumber_Tests.MethodToString" />
+                        <Node UniqueName="[0-1121]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorAddition" />
+                        <Node UniqueName="[0-1125]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorDivision" />
+                        <Node UniqueName="[0-1124]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorDivisionByZero" />
+                        <Node UniqueName="[0-1126]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorEquals" />
+                        <Node UniqueName="[0-1128]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorGreaterThan" />
+                        <Node UniqueName="[0-1130]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorGreaterThanOrEqual" />
+                        <Node UniqueName="[0-1129]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorLessThan" />
+                        <Node UniqueName="[0-1131]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorLessThanOrEqual" />
+                        <Node UniqueName="[0-1123]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorMultiplication" />
+                        <Node UniqueName="[0-1127]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorNotEquals" />
+                        <Node UniqueName="[0-1122]Mathematics_Unit_Tests.Common.RealNumber_Tests.OperatorSubtraction" />
+                        <Node UniqueName="[0-1110]Mathematics_Unit_Tests.Common.RealNumber_Tests.PopertyValueGet" />
+                        <Node UniqueName="[0-1111]Mathematics_Unit_Tests.Common.RealNumber_Tests.PopertyValueSet" />
+                        <Node UniqueName="[0-1112]Mathematics_Unit_Tests.Common.RealNumber_Tests.PropertyAdditiveIdentity" />
+                        <Node UniqueName="[0-1113]Mathematics_Unit_Tests.Common.RealNumber_Tests.PropertyMultiplicativeIdentity" />
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1132]Mathematics_Unit_Tests.Common.Zmod2_Tests" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1133]Mathematics_Unit_Tests.Common.Zmod2_Tests.ConstructorNew" />
+                        <Node UniqueName="[0-1134]Mathematics_Unit_Tests.Common.Zmod2_Tests.ConstructorNewInteger" />
+                        <Node UniqueName="[0-1139]Mathematics_Unit_Tests.Common.Zmod2_Tests.MethodAbsoluteValue" />
+                        <Node UniqueName="[0-1140]Mathematics_Unit_Tests.Common.Zmod2_Tests.MethodAdd" />
+                        <Node UniqueName="[0-1141]Mathematics_Unit_Tests.Common.Zmod2_Tests.MethodCompareTo" />
+                        <Node UniqueName="[0-1142]Mathematics_Unit_Tests.Common.Zmod2_Tests.MethodSubtract" />
+                        <Node UniqueName="[0-1135]Mathematics_Unit_Tests.Common.Zmod2_Tests.PopertyValueGet" />
+                        <Node UniqueName="[0-1136]Mathematics_Unit_Tests.Common.Zmod2_Tests.PopertyValueSet" />
+                        <Node UniqueName="[0-1137]Mathematics_Unit_Tests.Common.Zmod2_Tests.PropertyAdditiveIdentity" />
+                        <Node UniqueName="[0-1138]Mathematics_Unit_Tests.Common.Zmod2_Tests.PropertyMultiplicativeIdentity" />
+                      </Nodes>
+                    </Node>
+                  </Nodes>
+                </Node>
+                <Node UniqueName="[0-1192]Mathematics_Unit_Tests.Geometry" Expanded="true">
+                  <Nodes>
+                    <Node UniqueName="[0-1143]Mathematics_Unit_Tests.Geometry.PointF2_Tests">
+                      <Nodes>
+                        <Node UniqueName="[0-1144]Mathematics_Unit_Tests.Geometry.PointF2_Tests.ConstructorNew" />
+                        <Node UniqueName="[0-1145]Mathematics_Unit_Tests.Geometry.PointF2_Tests.ConstructorNewDoubleDouble" />
+                        <Node UniqueName="[0-1151]Mathematics_Unit_Tests.Geometry.PointF2_Tests.MethodDistance" />
+                        <Node UniqueName="[0-1150]Mathematics_Unit_Tests.Geometry.PointF2_Tests.MethodEquals" />
+                        <Node UniqueName="[0-1152]Mathematics_Unit_Tests.Geometry.PointF2_Tests.MethodToString" />
+                        <Node UniqueName="[0-1155]Mathematics_Unit_Tests.Geometry.PointF2_Tests.OperatorAddition" />
+                        <Node UniqueName="[0-1158]Mathematics_Unit_Tests.Geometry.PointF2_Tests.OperatorCTypeToPointF2FromPoint" />
+                        <Node UniqueName="[0-1156]Mathematics_Unit_Tests.Geometry.PointF2_Tests.OperatorCTypeToPointF2FromPointF" />
+                        <Node UniqueName="[0-1157]Mathematics_Unit_Tests.Geometry.PointF2_Tests.OperatorCTypeToPointFFromPointF2" />
+                        <Node UniqueName="[0-1159]Mathematics_Unit_Tests.Geometry.PointF2_Tests.OperatorCTypeToPointFromPointF2" />
+                        <Node UniqueName="[0-1153]Mathematics_Unit_Tests.Geometry.PointF2_Tests.OperatorEquals" />
+                        <Node UniqueName="[0-1154]Mathematics_Unit_Tests.Geometry.PointF2_Tests.OperatorNotEquals" />
+                        <Node UniqueName="[0-1146]Mathematics_Unit_Tests.Geometry.PointF2_Tests.PropertyXGet" />
+                        <Node UniqueName="[0-1147]Mathematics_Unit_Tests.Geometry.PointF2_Tests.PropertyXSet" />
+                        <Node UniqueName="[0-1148]Mathematics_Unit_Tests.Geometry.PointF2_Tests.PropertyYGet" />
+                        <Node UniqueName="[0-1149]Mathematics_Unit_Tests.Geometry.PointF2_Tests.PropertyYSet" />
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1160]Mathematics_Unit_Tests.Geometry.PointF3_Tests">
+                      <Nodes>
+                        <Node UniqueName="[0-1161]Mathematics_Unit_Tests.Geometry.PointF3_Tests.ConstructorNew" />
+                        <Node UniqueName="[0-1162]Mathematics_Unit_Tests.Geometry.PointF3_Tests.ConstructorNewDoubleDoubleDouble" />
+                        <Node UniqueName="[0-1168]Mathematics_Unit_Tests.Geometry.PointF3_Tests.MethodDistance" />
+                        <Node UniqueName="[0-1167]Mathematics_Unit_Tests.Geometry.PointF3_Tests.MethodEquals" />
+                        <Node UniqueName="[0-1169]Mathematics_Unit_Tests.Geometry.PointF3_Tests.MethodToString" />
+                        <Node UniqueName="[0-1172]Mathematics_Unit_Tests.Geometry.PointF3_Tests.OperatorAddition" />
+                        <Node UniqueName="[0-1170]Mathematics_Unit_Tests.Geometry.PointF3_Tests.OperatorEquals" />
+                        <Node UniqueName="[0-1171]Mathematics_Unit_Tests.Geometry.PointF3_Tests.OperatorNotEquals" />
+                        <Node UniqueName="[0-1163]Mathematics_Unit_Tests.Geometry.PointF3_Tests.PropertyXGet" />
+                        <Node UniqueName="[0-1164]Mathematics_Unit_Tests.Geometry.PointF3_Tests.PropertyXSet" />
+                        <Node UniqueName="[0-1165]Mathematics_Unit_Tests.Geometry.PointF3_Tests.PropertyYGet" />
+                        <Node UniqueName="[0-1166]Mathematics_Unit_Tests.Geometry.PointF3_Tests.PropertyYSet" />
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1173]Mathematics_Unit_Tests.Geometry.Vector2_Tests">
+                      <Nodes>
+                        <Node UniqueName="[0-1174]Mathematics_Unit_Tests.Geometry.Vector2_Tests.ConstructorNew" />
+                        <Node UniqueName="[0-1175]Mathematics_Unit_Tests.Geometry.Vector2_Tests.ConstructorNewDoubleDouble" />
+                        <Node UniqueName="[0-1176]Mathematics_Unit_Tests.Geometry.Vector2_Tests.ConstructorNewPointF2PointF2" />
+                        <Node UniqueName="[0-1177]Mathematics_Unit_Tests.Geometry.Vector2_Tests.ConstructorNewPointF2PointF2Double" />
+                        <Node UniqueName="[0-1178]Mathematics_Unit_Tests.Geometry.Vector2_Tests.ConstructorNewVector2Double" />
+                        <Node UniqueName="[0-1183]Mathematics_Unit_Tests.Geometry.Vector2_Tests.MethodAdd" />
+                        <Node UniqueName="[0-1184]Mathematics_Unit_Tests.Geometry.Vector2_Tests.MethodCrossProduct" />
+                        <Node UniqueName="[0-1185]Mathematics_Unit_Tests.Geometry.Vector2_Tests.MethodDotProduct" />
+                        <Node UniqueName="[0-1186]Mathematics_Unit_Tests.Geometry.Vector2_Tests.MethodNormalizedVector" />
+                        <Node UniqueName="[0-1179]Mathematics_Unit_Tests.Geometry.Vector2_Tests.PropertyIGet" />
+                        <Node UniqueName="[0-1180]Mathematics_Unit_Tests.Geometry.Vector2_Tests.PropertyISet" />
+                        <Node UniqueName="[0-1181]Mathematics_Unit_Tests.Geometry.Vector2_Tests.PropertyJGet" />
+                        <Node UniqueName="[0-1182]Mathematics_Unit_Tests.Geometry.Vector2_Tests.PropertyJSet" />
+                      </Nodes>
+                    </Node>
+                  </Nodes>
+                </Node>
+              </Nodes>
+            </Node>
+          </Nodes>
+        </Node>
+      </Nodes>
+    </Node>
+  </Nodes>
+</VisualState>

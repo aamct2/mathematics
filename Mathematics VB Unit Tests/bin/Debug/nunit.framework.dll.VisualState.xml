@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1001]D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics VB Unit Tests\bin\Debug\nunit.framework.dll</TopNode>
+  <SelectedNode>[0-1000]NUnit.Framework.TestCase</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1001]D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics VB Unit Tests\bin\Debug\nunit.framework.dll" Expanded="true" />
+    <Node UniqueName="[0-1002]NUnit" Expanded="true" />
+    <Node UniqueName="[0-1003]NUnit.Framework" Expanded="true" />
+  </Nodes>
+</VisualState>

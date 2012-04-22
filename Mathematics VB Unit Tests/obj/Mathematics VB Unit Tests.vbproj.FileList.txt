@@ -1,0 +1,25 @@
+bin\Release\Mathematics Unit Tests.dll
+bin\Release\Mathematics Unit Tests.pdb
+bin\Release\Mathematics Unit Tests.xml
+bin\Release\Mathematics.dll
+bin\Release\Mathematics.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Mathematics_Unit_Tests.Resources.resources
+obj\Release\Mathematics VB Unit Tests.vbproj.GenerateResource.Cache
+obj\Release\Mathematics Unit Tests.dll
+obj\Release\Mathematics Unit Tests.xml
+obj\Release\Mathematics Unit Tests.pdb
+bin\Debug\Mathematics Unit Tests.dll
+bin\Debug\Mathematics Unit Tests.pdb
+bin\Debug\Mathematics Unit Tests.xml
+bin\Debug\Mathematics.dll
+bin\Debug\nunit.framework.dll
+bin\Debug\Mathematics.pdb
+bin\Debug\Mathematics.xml
+bin\Debug\nunit.framework.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Mathematics_Unit_Tests.Resources.resources
+obj\Debug\Mathematics VB Unit Tests.vbproj.GenerateResource.Cache
+obj\Debug\Mathematics Unit Tests.dll
+obj\Debug\Mathematics Unit Tests.xml
+obj\Debug\Mathematics Unit Tests.pdb

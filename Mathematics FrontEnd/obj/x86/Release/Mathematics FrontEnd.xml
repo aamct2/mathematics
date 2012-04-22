@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MathematicsFrontEnd
+</name>
+</assembly>
+<members>
+<member name="T:Mathematics_FrontEnd.MainScreen">
+	<summary>
+ This project is used for testing purposes. Later it will be used as a front-end for the library.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Mathematics_FrontEnd.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Mathematics_FrontEnd.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Mathematics_FrontEnd.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

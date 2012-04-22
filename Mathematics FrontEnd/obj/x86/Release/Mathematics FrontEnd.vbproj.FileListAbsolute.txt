@@ -1,0 +1,28 @@
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\bin\Release\Mathematics FrontEnd.exe
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\bin\Release\Mathematics FrontEnd.pdb
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\bin\Release\Mathematics FrontEnd.xml
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\bin\Release\Mathematics.dll
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\bin\Release\Mathematics.pdb
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\bin\Release\Mathematics.xml
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\obj\x86\Release\Mathematics_FrontEnd.MainScreen.resources
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\obj\x86\Release\Mathematics_FrontEnd.Resources.resources
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.exe
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.xml
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.pdb
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.exe
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.xml
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.pdb
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\bin\Release\Mathematics FrontEnd.exe
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\bin\Release\Mathematics FrontEnd.pdb
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\bin\Release\Mathematics FrontEnd.xml
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\bin\Release\Mathematics.dll
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\bin\Release\Mathematics.pdb
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\bin\Release\Mathematics.xml
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics_FrontEnd.MainScreen.resources
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics_FrontEnd.Resources.resources
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\GenerateResource.write.1.tlog

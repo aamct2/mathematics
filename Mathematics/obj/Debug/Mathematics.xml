@@ -1,0 +1,2024 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Mathematics
+</name>
+</assembly>
+<members>
+<member name="M:Mathematics.Algebra.FiniteRing`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Creates a new finite ring.
+ </summary>
+	<param name="newSet">The set for the ring.</param>
+	<param name="newAddition">The addition operation for the ring.</param>
+	<param name="newMultiplication">The multiplication operation for the ring.</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if 'newOperation' does not satisfy all the ring axioms.</exception>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteRing`1.theSet">
+	<summary>
+ Returns the set of the structure.
+ </summary>
+	<value>The set of the structure.</value>
+	<returns>Returns the set of the structure.</returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteRing`1.AdditionOperation">
+	<summary>
+ Returns the addition operation of the structure.
+ </summary>
+	<value>The addition operation of the structure.</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteRing`1.AdditiveIdentity">
+	<summary>
+ Returns the additive identity of the structure (the identity of the addition operation).
+ </summary>
+	<value>The additive identity of the structure.</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteRing`1.MultiplicationOperation">
+	<summary>
+ Returns the multiplication operation of the structure.
+ </summary>
+	<value>The multiplication operation of the structure.</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteRing`1.UnderlyingAbelianGroup">
+	<summary>
+ Returns the underlying abelian group.
+ </summary>
+	<value>The underlying abelian group.</value>
+	<returns></returns>
+	<remarks>The underlying abelian group is formed by taking the set together with the addition operation.</remarks>
+</member><member name="P:Mathematics.Algebra.FiniteRing`1.UnderlyingSemigroup">
+	<summary>
+ Returns the underlying semigroup.
+ </summary>
+	<value>The underlying semigroup.</value>
+	<returns></returns>
+	<remarks>The underlying semigroup is formed by taking the set together with the multiplication operation.</remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.ApplyAddition(Mathematics.Tuple)">
+	<summary>
+ Returns the result of applying the addition operation of the structure to a <c>Tuple</c> (pair) of elements.
+ </summary>
+	<param name="input">The <c>Tuple</c> (pair) to apply the addition operation to.</param>
+	<returns>Returns the result of applying the addition operation of the structure to a given <c>Tuple</c> (pair) of elements.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.ApplyMultiplication(Mathematics.Tuple)">
+	<summary>
+ Returns the result of applying the multiplication operation of the structure to a <c>Tuple</c> (pair) of elements.
+ </summary>
+	<param name="input">The <c>Tuple</c> (pair) to apply the multiplication operation to.</param>
+	<returns>Returns the result of applying the multiplication operation of the structure to a given <c>Tuple</c> (pair) of elements.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.Center">
+	<summary>
+ Returns the center of the ring as a set. In other words, the set of all elements that commute with every other element in the ring (with respect to multiplication).
+ </summary>
+	<returns>Returns the center of the ring as a <c>FiniteSet</c>.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.CenterRing">
+	<summary>
+ Returns the center of the ring as a commutative ring.
+ </summary>
+	<returns>Returns the center of the ring as a commutative ring.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.Commutator(`0,`0)">
+	<summary>
+ Returns the commutator of two elements, in a sense given an indication of how badly the operations fails to commute for two elements. [a,b] = ab - ba.
+ </summary>
+	<param name="lhs">The left-hand element in the operation.</param>
+	<param name="rhs">The right-hand element in the operation.</param>
+	<exception cref="T:Mathematics.CommonExceptions.NotMemberOfException">Throws NotMemberOfException if parameter 'lhs' or 'rhs' is not a member of the ring.</exception>
+	<returns>Returns the commutator of two given elements.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.DirectProduct``1(Mathematics.Algebra.FiniteRing{``0})">
+	<summary>
+ Returns the direct product of this ring with a given ring.
+ </summary>
+	<typeparam name="G">The Type of elements in the second ring.</typeparam>
+	<param name="otherRing">The other finite ring to take the direct product with.</param>
+	<returns>Returns the direct product of this ring with a given ring.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.Equals(Mathematics.Algebra.FiniteRing{`0})">
+	<summary>
+ Determines whether two rings are equal. In other words, if two rings have the same set and operations.
+ </summary>
+	<param name="other">The other finite ring to compare with.</param>
+	<returns>Returns <c>True</c> if this ring and another given ring are equal, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.IsBoolean">
+	<summary>
+ Determines whether the ring is a boolean ring. In other words, all its elements are idempotent (with respect to multiplication).
+ </summary>
+	<returns>Returns <c>True</c> if the ring is a boolean ring, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.IsHomomorphism``1(Mathematics.Algebra.FiniteRing{``0},Mathematics.FiniteFunction{`0,``0})">
+	<summary>
+ Determines whether a function is a homomorphism from this ring to another ring.
+ </summary>
+	<typeparam name="G"></typeparam>
+	<param name="codomain"></param>
+	<param name="testFunction"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.IsIsomorphism``1(Mathematics.Algebra.FiniteRing{``0},Mathematics.FiniteFunction{`0,``0})">
+	<summary>
+ Determines whether a function is a isomorphism from this ring to another ring. In other words, it's a bijective homomorphism.
+ </summary>
+	<typeparam name="G"></typeparam>
+	<param name="codomain"></param>
+	<param name="testFunction"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.IsJacobian">
+	<summary>
+ Determines whether the ring satisfies the jacobian identity. For all x,y,z in the ring, xyz + zxy + yzx = 0.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.IsLeftIdeal(Mathematics.FiniteSet{`0})">
+	<summary>
+ Determines whether a set is a left-ideal of this ring.
+ </summary>
+	<param name="testIdeal"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.IsRightIdeal(Mathematics.FiniteSet{`0})">
+	<summary>
+ Determines whether a set is a right-ideal of this ring.
+ </summary>
+	<param name="testIdeal"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.IsSimple">
+	<summary>
+ Determines whether this ring is simple. In other words, it is a non-zero ring and it has no two-sided ideals besides the trivial ideal and itself.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.IsSubringOf(Mathematics.Algebra.FiniteRing{`0})">
+	<summary>
+ Determines whether this ring is a subring of another ring.
+ </summary>
+	<param name="superRing"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.IsTwoSidedIdeal(Mathematics.FiniteSet{`0})">
+	<summary>
+ Determines whether a set is a two-sided ideal of this ring. In other words, that it is both a left- and right-ideal.
+ </summary>
+	<param name="testIdeal"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.SetOfAllTwoSidedIdeals">
+	<summary>
+ Returns a set of all two-sided ideals of this ring.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteRing`1.TrivialSubring">
+	<summary>
+ Returns the trivial subring.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteRing`1.DirectProductMap`1">
+	<summary>
+ The map for a direct product (cartesian product) ring.
+ </summary>
+	<typeparam name="G"></typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteRing`1">
+	<summary>
+ Represents a finite ring with elements of type T.
+ </summary>
+	<typeparam name="T">The Type of element in the ring.</typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.NotIdealException">
+	<summary>
+ Represents an error that an object was not an ideal. 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.NotSubringException">
+	<summary>
+ Represents an error that an object was not a subgring. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteSemigroup`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Creates a new finite semigroup.
+ </summary>
+	<param name="newSet">The set for the semigroup.</param>
+	<param name="newOperation">The operation for the semigroup.</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if 'newOperation' is not associative.</exception>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteSemigroup`1.IsBand">
+	<summary>
+ Returns whether or not the semigroup is also a band (a semigroup that is idempotent)
+ </summary>
+	<returns>Returns <c>True</c> if the semigroup is also a band, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteSemigroup`1.IsSemigroup(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Determines whether a given finite set and operation will form a finite semigroup.
+ </summary>
+	<param name="testSet">The finite set to test.</param>
+	<param name="testOperation">The operation to test.</param>
+	<returns>Returns <c>True</c> if the given set and operation will form a semigroup, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteSemigroup`1.IsSemigroup(Mathematics.Algebra.FiniteMagma{`0})">
+	<summary>
+ Determines whether a given finite magma will form a finite semigroup.
+ </summary>
+	<param name="testMagma">The magma to test.</param>
+	<returns>Returns <c>True</c> if the given magma is also a semigroup, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteSemigroup`1.IsSemilattice">
+	<summary>
+ Returns whether or not the semigroup is also a semilattice (a semigroup that is both a band and commutative)
+ </summary>
+	<returns>Returns <c>True</c> if the semigroup is also a semilattice, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteSemigroup`1">
+	<summary>
+ Represents a finite semigroup with elements of type T.
+ </summary>
+	<typeparam name="T">The Type of element in the semigroup.</typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Map`2">
+	<summary>
+ A base class that defines a map.
+ </summary>
+	<typeparam name="T">The type used in the domain.</typeparam>
+	<typeparam name="G">The type used in the codomain.</typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.SetDefinedMap`2">
+	<summary>
+ Defines a map by using a set of ordered pairs.
+ </summary>
+	<typeparam name="X">The Type of input values for the map.</typeparam>
+	<typeparam name="Y">The Type of output values for the map.</typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.RealNumber">
+	<summary>
+ Provides a wrapper for the Double type that is usable by other Mathematics classes.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteField`1.IsSubfieldOf(Mathematics.Algebra.FiniteField{`0})">
+	<summary>
+ Determines whether this field is a subfield of another field.
+ </summary>
+	<param name="superField"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteField`1">
+	<summary>
+ Represents a finite field with elements of type T.
+ </summary>
+	<typeparam name="T">The Type of element in the field.</typeparam>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteLeftModule`2.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0},Mathematics.FiniteLeftExternalBinaryOperation{`1,`0},Mathematics.Algebra.FiniteRing{`1})">
+	<summary>
+ Creates a new finite left module.
+ </summary>
+	<param name="newSet">The set for the module.</param>
+	<param name="newAddition">The addition operation for the module.</param>
+	<param name="newMultiplication">The multiplication operation for the module.</param>
+	<param name="newScalarRing">The ring of scalars for the module (ring must have a multiplicative identity).</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if 'newOperation' does not satisfy all the left module axioms.</exception>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteLeftModule`2.theSet">
+	<summary>
+ Returns the set of the structure.
+ </summary>
+	<value>The set of the structure.</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteLeftModule`2.AdditionOperation">
+	<summary>
+ Returns the addition operation of the structure.
+ </summary>
+	<value>The addition operation of the structure.</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteLeftModule`2.AdditiveIdentity">
+	<summary>
+ Returns the additive identity of the structure (the identity of the addition operation).
+ </summary>
+	<value>The additive identity of the structure.</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteLeftModule`2.MultiplicationOperation">
+	<summary>
+ Returns the multiplication operation of the structure.
+ </summary>
+	<value>The multiplication operation of the structure.</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteLeftModule`2.UnderlyingAbelianGroup">
+	<summary>
+ Returns the underlying abelian group.
+ </summary>
+	<value></value>
+	<returns>The underlying abelian group.</returns>
+	<remarks>The underlying abelian group is formed by taking the set together with the addition operation.</remarks>
+</member><member name="P:Mathematics.Algebra.FiniteLeftModule`2.ScalarRing">
+	<summary>
+ Returns the scalar ring associated with the module.
+ </summary>
+	<value>The scalar ring associated with the module.</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteLeftModule`2.ApplyAddition(Mathematics.Tuple)">
+	<summary>
+ Returns the result of applying the addition operation of the structure to a Tuple (pair) of elements.
+ </summary>
+	<param name="input">The Tuple (pair) to apply the addition operation to.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteLeftModule`2.ApplyMultiplication(Mathematics.Tuple)">
+	<summary>
+ Returns the result of applying the multiplication operation of the structure to a Tuple (pair) of elements.
+ </summary>
+	<param name="input">The Tuple (pair) to apply the multiplication operation to.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteLeftModule`2">
+	<summary>
+ Represents a finite left module with elements of type T and scalars of type Scalar.
+ </summary>
+	<typeparam name="T">The Type of element in the module.</typeparam>
+	<typeparam name="Scalar">The Type of scalar elements.</typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.CommonExceptions.NotMemberOfException">
+	<summary>
+ Represents an error that an object was not a member of another object.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">
+	<summary>
+ Represents an error than an object did not satisfy a particular property.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Mathematics.CommonExceptions.UndefiniedException">
+	<summary>
+ Represents an error that the returned value is undefined.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteBinaryOperation`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.Map{Mathematics.Tuple,`0})">
+	<summary>
+ Creates a new binary operation.
+ </summary>
+	<param name="newCodomain"></param>
+	<param name="newRelation"></param>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteBinaryOperation`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.Map{Mathematics.Tuple,`0},System.Collections.Generic.Dictionary{System.String,System.Boolean})">
+	<summary>
+ Creates a new binary operation and stores any initially known properties of the operation.
+ </summary>
+	<param name="newCodomain"></param>
+	<param name="newRelation"></param>
+	<param name="knownProperties"></param>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteBinaryOperation`1.IsAssociative">
+	<summary>
+ Determines if the operation is associative. In other words, (a + b) + c = a + (b + c) for all a, b, and c.
+ </summary>
+	<returns></returns>
+	<remarks>Uses Light's algorithm for testing associativity.</remarks>
+</member><member name="M:Mathematics.FiniteBinaryOperation`1.IsCommutative">
+	<summary>
+ Determines if the operation is commutative. In other words, a + b = b + a for all a and b.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteBinaryOperation`1.IsIdempotent">
+	<summary>
+ Determines if the operation is idempotent. In other words a + a = a for all a.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteBinaryOperation`1.HasIdentity">
+	<summary>
+ Determines if the operation has an identity element. In other words there exists an e such that for all a, a + e = e + a = a.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteBinaryOperation`1.HasInverses">
+	<summary>
+ Determines if the operation has inverses for all elements in the domain. In other words there exists an i such that for all a, a + i = i + a = e.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteBinaryOperation`1.HasInversesExcept(`0)">
+	<summary>
+ Determines if the operation has inverses for all elements in the domain except one specified element.
+ </summary>
+	<param name="except"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteBinaryOperation`1.InverseElement(`0)">
+	<summary>
+ Returns the inverse of the element. In other words, given a this function returns b such that a + b = b + a = e.
+ </summary>
+	<param name="elem"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteBinaryOperation`1.Restriction(Mathematics.FiniteSet{`0})">
+	<summary>
+ Returns the restriction of this operation.
+ </summary>
+	<param name="newCodomain"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.IAbsoluteable`1">
+	<summary>
+ Defines a method for obtaining the absolute value of an element.
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Creates a new finite group.
+ </summary>
+	<param name="newSet">The set for the group.</param>
+	<param name="newOperation">The operation for the group.</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if 'newOperation' does not have an identity element, does not have inverses for every element, or is not associative.</exception>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0},System.Collections.Generic.Dictionary{System.String,System.Boolean})">
+	<summary>
+ Creates a new finite group and stores any initially known properties of the group.
+ </summary>
+	<param name="newSet">The set for the group.</param>
+	<param name="newOperation">The operation for the group.</param>
+	<param name="knownProperties">Any known properties about the group already.</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if 'newOperation' does not have an identity element, does not have inverses for every element, or is not associative.</exception>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.Center">
+	<summary>
+ Returns the center of the group as a set. In other words, the set of all elements that commute with every other element in the group.
+ </summary>
+	<returns>Returns the center of the group as a set.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.CenterGroup">
+	<summary>
+ Returns the center of the group as a group. (In fact, this group is always abelian.)
+ </summary>
+	<returns>Returns the center of the group as a group.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.Centralizer(`0)">
+	<summary>
+ Returns the centralizer, with respect to this group, of a given element of the group.
+ </summary>
+	<param name="elem">The element whose centralizer, with respect to this group, we are to form.</param>
+	<exception cref="T:Mathematics.CommonExceptions.NotMemberOfException">Throws NotMemberOfException if parameter 'elem' is not a member of the group.</exception>
+	<returns>Returns the centralizer of a given element as a <c>FiniteSet</c>.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.ConjugacyClass(`0)">
+	<summary>
+ Returns the conjugacy class of an element.
+ </summary>
+	<param name="elem">The element whose conjugacy class is to be returned.</param>
+	<exception cref="T:Mathematics.CommonExceptions.NotMemberOfException">Throws NotMemberOfException if parameter 'elem' is not a member of the group.</exception>
+	<returns>Returns the conjugacy class of an element as a <c>FiniteSet</c>.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.Commutator(`0,`0)">
+	<summary>
+ Returns the commutator of two elements, in a sense given an indication of how badly the operation fails to commute for two elements. [g,h] = g^-1 + h^-1 + g + h.
+ </summary>
+	<param name="lhs">The first element.</param>
+	<param name="rhs">The second element.</param>
+	<exception cref="T:Mathematics.CommonExceptions.NotMemberOfException">Throws NotMemberOfException if parameter 'lhs' or 'rhs' is not a member of the group.</exception>
+	<returns>Returns the commutator of two elements.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.DerivedSubgroup(System.Boolean)">
+	<summary>
+ Returns the derived subgroup (also known as the commutator subgroup) of this group. In other words, the group whose elements are all the possible commutators of this group.
+ </summary>
+	<returns>Returns the derived subgroup.</returns>
+	<param name="useParallel">Optional: Determines whether a parallel or sequential algorithm is used. Default is to use the parallel algorithm.</param>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.DirectProduct``1(Mathematics.Algebra.FiniteGroup{``0})">
+	<summary>
+ Returns the direct product of this group with a given group.
+ </summary>
+	<typeparam name="G">The Type of elements in the second group.</typeparam>
+	<param name="otherGroup">The other finite group to take the direct product with.</param>
+	<returns>Returns the direct product of this group with another group.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.DoubleCoset(Mathematics.Algebra.FiniteGroup{`0},Mathematics.Algebra.FiniteGroup{`0},`0)">
+	<summary>
+ Returns the double coset of a given element with two given subgroup.
+ </summary>
+	<param name="leftSubgroup">The subgroup with which to form the left coset.</param>
+	<param name="rightSubgroup">The subgroup with which to form the right coset.</param>
+	<param name="elem">The element whose double coset is to be returned.</param>
+	<exception cref="T:Mathematics.Algebra.NotSubgroupException">Thorws NotSubgroupException if parameter 'leftSubgroup' or 'rightSubgroup' is not a subgroup of this group.</exception>
+	<returns>Returns the double coset of a given element with two given subgroups.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.Equals(Mathematics.Algebra.FiniteGroup{`0})">
+	<summary>
+ Determines whether two groups are equal. In other words, if two groups have the same set and operation.
+ </summary>
+	<param name="other">The other finite group to compare with.</param>
+	<returns>Returns <c>True</c> if the two groups have the same set and operation, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.FrattiniSubgroup">
+	<summary>
+ Returns the Frattini subgroup of this group. In other words, the intersection of all maximal subgroups. If the group has no maximal subgroups, the Frattini subgroup is the whole group.
+ </summary>
+	<returns>Returns the frattini subgroup of this group.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.GeneratesGroup(`0)">
+	<summary>
+ Determines whether a given element generates the group.
+ </summary>
+	<param name="elem">The element to test as a generator of the group.</param>
+	<exception cref="T:Mathematics.CommonExceptions.NotMemberOfException">Throws NotMemberOfException if parameter 'elem' is not a member of the group.</exception>
+	<returns>Returns <c>True</c> if a given element generates the whole group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.GeneratedSet(Mathematics.FiniteSet{`0},Mathematics.Map{Mathematics.Tuple,`0})">
+	<summary>
+ Attempts to generate a set given a set of generators and a map.
+ </summary>
+	<param name="generatorSet">The set of generators.</param>
+	<param name="theMap">The map to apply on the set of generators.</param>
+	<returns>A set generated by a set of generators and a map.</returns>
+	<exception cref="T:System.Exception">Throws Exception if it is not able to generate the set after 3000 cycles. This means the set would probably be infinite.</exception>
+	<exception cref="T:Mathematics.CommonExceptions.UndefiniedException">Throws UndefinedException if while trying to apply theMap, a tuple of elements are not members of the domain.</exception>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.GroupTableGeneric(System.Boolean)">
+	<summary>
+ Returns the group table for the group where each entry uses the index of the element in the set as the element's name.
+ </summary>
+	<param name="useParallel">Optional: Determines whether the group table is calculated using a parallel algorithm. By default, the algorithm is parallel.</param>
+	<returns>Returns the group table for the group as a <c>DataTable</c> using the index of the element in the set as the element's name.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.GroupTableSpecific">
+	<summary>
+ Returns the group table for the group where each entry uses T.ToString as the element's name.
+ </summary>
+	<returns>Returns the group table for the group as a <c>DataTable</c> using the <c>ToString</c> method of the element as the element's name.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsAbelian">
+	<summary>
+ Determines whether this group is abelian. In other words, if its operation is commutative.
+ </summary>
+	<returns>Returns <c>True</c> if the group is abelian, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsAmbivalent">
+	<summary>
+ Determines whether this group is ambivalent. In other words, if every element and its inverse are conjugates.
+ </summary>
+	<returns>Returns <c>True</c> if the group is ambivalent, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsConjugate(`0,`0)">
+	<summary>
+ Determines whether two elements of the group are conjugate to eachother. Two elements A and B are conjugate if there exists a G such that G + A + G^-1 = B.
+ </summary>
+	<param name="elem1">The first element.</param>
+	<param name="elem2">The second element.</param>
+	<exception cref="T:Mathematics.CommonExceptions.NotMemberOfException">Throws NotMemberOfException if parameter 'elem1' or 'elem2' is not a member of the group.</exception>
+	<returns>Returns <c>True</c> if the two elements are conjugates, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsCyclic">
+	<summary>
+ Determines whether or not this group is cyclic.
+ </summary>
+	<returns>Returns <c>True</c> if the group is cyclic, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsDedekind">
+	<summary>
+ Determines whether or not this group is a Dedekind group. In other words, that all its subgroups are normal.
+ </summary>
+	<returns>Returns <c>True</c> if the group is a Dedekind group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsHamiltonian">
+	<summary>
+ Determines whether or not this group is a Hamiltonian group. In other words, a non-abelian Dedekind group.
+ </summary>
+	<returns>Returns <c>True</c> if the group is a Hamiltonian group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsGroup(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Determines whether a given finite set and operation will form a finite group.
+ </summary>
+	<param name="testSet">The finite set to test.</param>
+	<param name="testOperation">The operation to test.</param>
+	<returns>Returns <c>True</c> if a given set and operation will form a group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsGroup(Mathematics.Algebra.FiniteMonoid{`0})">
+	<summary>
+ Determines whether a given finite monoid will form a finite group.
+ </summary>
+	<param name="testMonoid">The monoid to test.</param>
+	<returns>Returns <c>True</c> if a given monoid is also a group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsHomomorphism``1(Mathematics.Algebra.FiniteGroup{``0},Mathematics.FiniteFunction{`0,``0})">
+	<summary>
+ Determines whether a function is a homomorphism from this group to another group.
+ </summary>
+	<typeparam name="G">The Type of elements in the other group.</typeparam>
+	<param name="codomain">The other group (which forms the codomain of the function).</param>
+	<param name="testFunction">The function to test whether or not it is a homomorphism.</param>
+	<returns>Returns <c>True</c> if the function is a group homomorphism, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsHypoabelian">
+	<summary>
+ Determines whether the group is hypoabelian. In other words, that its perfect core is trivial.
+ </summary>
+	<returns>Returns <c>True</c> if the group is hypoabelian, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsImperfect">
+	<summary>
+ Determines whether the group is imperfect. In other words, that it has no nontrivial quotient group that is perfect.
+ </summary>
+	<returns>Returns <c>True</c> if the group is imperfect, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsIsomorphism``1(Mathematics.Algebra.FiniteGroup{``0},Mathematics.FiniteFunction{`0,``0})">
+	<summary>
+ Determines whether a function is a isomorphism from this group to another group. In other words, it's a bijective homomorphism.
+ </summary>
+	<typeparam name="G">The Type of elements in the other group.</typeparam>
+	<param name="codomain">The other group (which forms the codomain of the function).</param>
+	<param name="testFunction">The function to test whether or not it is a isomorphism.</param>
+	<returns>Returns <c>True</c> if the function is a group isomorphism, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsMaximalSubgroupOf(Mathematics.Algebra.FiniteGroup{`0})">
+	<summary>
+ Determines whether this group is a maximal subgroup of a given group.
+ </summary>
+	<param name="superGroup">The supergroup (or ambient group) to test if this group is a maximal subgroup of it.</param>
+	<returns>Returns <c>True</c> if the group is a maximal subgroup of a given group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsMetabelian">
+	<summary>
+ Determines whether this group is metabelian. In other words, if its derived subgroup is abelian.
+ </summary>
+	<returns>Returns <c>True</c> if the group is metabelian, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsMetanilpotent">
+	<summary>
+ Determines whether this group is metanilpotent. In other words, if it has a nilpotent normal subgroup whose quotient group is also nilpotent.
+ </summary>
+	<returns>Returns <c>True</c> if the group is metanilpotent, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsNilpotent">
+	<summary>
+ Determines whether this group is nilpotent.
+ </summary>
+	<returns>Returns <c>True</c> if the group is nilpotent, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsNormalSubgroupOf(Mathematics.Algebra.FiniteGroup{`0})">
+	<summary>
+ Determines whether this group is a normal subgroup of another group.
+ </summary>
+	<param name="superGroup">The supergroup (or ambient group) to test if this group is a normal subgroup of it.</param>
+	<returns>Returns <c>True</c> if the group is a normal subgroup of a given group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsPerfect">
+	<summary>
+ Determines whether this group is perfect. In other words, it is equal to its derived subgroup.
+ </summary>
+	<returns>Returns <c>True</c> if the group is perfect, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsProperSubgroupOf(Mathematics.Algebra.FiniteGroup{`0})">
+	<summary>
+ Determines whether this group is a proper subgroup of a given group. In other words it is a subgroup but not equal to the whole group.
+ </summary>
+	<param name="superGroup">The supergroup (or ambient group) to test if this group is a proper subgroup of it.</param>
+	<returns>Returns <c>True</c> if the group is a proper subgroup of a given group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsSelfNormalizingSubgroupOf(Mathematics.Algebra.FiniteGroup{`0})">
+	<summary>
+ Determines whether this group is a self-normalizing subgroup of a given group. In other words, it is a subgroup equal to its own normalizer in the supergroup.
+ </summary>
+	<param name="superGroup">The supergroup (or ambient group) to test if this group is a self-normalizing subgroup of it.</param>
+	<returns>Returns <c>True</c> if the group is a self-normalizing subgroup of a given group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsSimple">
+	<summary>
+ Determines whether this group is simple. In other words, if this group's only normal subgroups is the group itself and the trivial subgroup.
+ </summary>
+	<returns>Returns <c>True</c> if the group is simple, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsSolvable">
+	<summary>
+ Determines whether this group is solvable.
+ </summary>
+	<returns>Returns <c>True</c> if the group is solvable, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsSpecial">
+	<summary>
+ Determines whether this group is special. In other words, that its center, derived subgroup, and Frattini subgroup coincide.
+ </summary>
+	<returns>Returns <c>True</c> if the group is special, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsSubgroupOf(Mathematics.Algebra.FiniteGroup{`0})">
+	<summary>
+ Determines whether this group is a subgroup of another group.
+ </summary>
+	<param name="superGroup">The supergroup (or ambient group) to test if this group is a subgroup of it.</param>
+	<returns>Returns <c>True</c> if the group is a subgroup of a given group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsTransitivelyNormalSubgroupOf(Mathematics.Algebra.FiniteGroup{`0})">
+	<summary>
+ Determines whether this group is a transitively normal subgroup of another group. In other words it is a normal subgroup and any normal subgroup of this group is also a normal subgroup of the superGroup.
+ </summary>
+	<param name="superGroup">The supergroup (or ambient group) to test if this group is a transitively-normal subgroup of it.</param>
+	<returns>Returns <c>True</c> if the group is a transitively normal subgroup of a given group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsTGroup">
+	<summary>
+ Determines whether this group is a T-Group. In other words, all normal subgroups are transitively normal.
+ </summary>
+	<returns>Returns <c>True</c> if the group is a T-Group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.IsTStarGroup">
+	<summary>
+ Determines whether this group is a T*-Group. In other words, all subgroups are T-Groups.
+ </summary>
+	<returns>Returns <c>True</c> if the group is a T*-Group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.LeftCoset(Mathematics.Algebra.FiniteGroup{`0},`0)">
+	<summary>
+ Returns the left coset of a particular element with a particular subgroup.
+ </summary>
+	<param name="subgroup">The subgroup with which to form the left coset.</param>
+	<param name="elem">The element whose left coset is to be returned.</param>
+	<exception cref="T:Mathematics.Algebra.NotSubgroupException">Throws NotSubgroupException if parameter 'subgroup' is not a subgroup of this group.</exception>
+	<exception cref="T:Mathematics.CommonExceptions.NotMemberOfException">Throws NotMemberOfException if parameter 'elem' is not a member of the group.</exception>
+	<returns>Returns the left coset of a given element and given subgroup as a <c>FiniteSet</c>.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.Normalizer(Mathematics.Algebra.FiniteGroup{`0},System.Boolean)">
+	<summary>
+ Returns the normalizer of a subgroup with respect to this group.
+ </summary>
+	<param name="subgroup">The subgroup whose normalizer is to be returned.</param>
+	<param name="UseParallel">Optional. Determines whether or not a parallel or sequential calculation of the normalizer will be performed. Default is to use a parallel calculation.</param>
+	<exception cref="T:Mathematics.Algebra.NotSubgroupException">Throws NotSubgroupException if parameter 'subgroup' is not a subgroup of this group.</exception>
+	<returns>Returns the normalizer of a given subgroup as a <c>FiniteSet</c>.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.Order">
+	<summary>
+ Returns the order of the group.
+ </summary>
+	<returns>Returns the order of the group.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.Order(`0)">
+	<summary>
+ Returns the order of a particular element of the group.
+ </summary>
+	<param name="elem">The element whose order is to be returned.</param>
+	<exception cref="T:Mathematics.CommonExceptions.NotMemberOfException">Throws NotMemberOfException if parameter 'elem' is not a member of the group.</exception>
+	<returns>Returns the order of a given element.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.PerfectCore">
+	<summary>
+ Returns the perfect core of the group. In other words, its largest perfect subgroup.
+ </summary>
+	<returns>Returns the perfect core of the group.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.Power(`0,System.Int32)">
+	<summary>
+ Returns the power of a given element.
+ </summary>
+	<param name="elem">The element to multiply by itself to the exponent-th degree.</param>
+	<param name="exponent">The number of times to multiply the element by itself.</param>
+	<returns>Returns the power of a given element.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.QuotientGroup(Mathematics.Algebra.FiniteGroup{`0})">
+	<summary>
+ Returns the quotient group formed from this group modulo a normal subgroup.
+ </summary>
+	<param name="normalSubgroup">The normal subgroup which is to be used as the divisor in the quotient construction.</param>
+	<exception cref="T:Mathematics.Algebra.NotSubgroupException">Throws NotSubgroupException if parameter 'normalSubgroup' is not a normal subgroup of this group.</exception>
+	<returns>Returns the quotient group formed from this group modulo a normal subgroup.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.RightCoset(Mathematics.Algebra.FiniteGroup{`0},`0)">
+	<summary>
+ Returns the right coset of a particular element with a particular subgroup.
+ </summary>
+	<param name="subgroup">The subgroup with which to form the right coset.</param>
+	<param name="elem">The element whose right coset is to be returned.</param>
+	<exception cref="T:Mathematics.Algebra.NotSubgroupException">Throws NotSubgroupException if parameter 'subgroup' is not a subgroup of this group.</exception>
+	<exception cref="T:Mathematics.CommonExceptions.NotMemberOfException">Throws NotMemberOfException if parameter 'elem' is not a member of the group.</exception>
+	<returns>Returns the right coset of a given element and a given subgroup.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.SetOfAllConjugacyClasses">
+	<summary>
+ Returns the set of all conjugacy classes of this group.
+ </summary>
+	<returns>Returns the set of all conjugacy classes of this group as a <c>FiniteSet(Of FiniteSet)</c>.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.SetOfAllMaximalSubgroups">
+	<summary>
+ Returns the set of all maximal subgroups of this group (does NOT include improper subgroups).
+ </summary>
+	<returns>Returns the set of all maximal subgroups as a <c>FiniteSet</c>.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.SetOfAllNormalSubgroups">
+	<summary>
+ Returns the set of all normal subgroups of this group (includes improper subgroups).
+ </summary>
+	<returns>Returns the set of all normal subgroups as a <c>FiniteSet</c>.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.SetOfAllSubgroups">
+	<summary>
+ Returns the set of all subgroups of this group (includes improper subgroups).
+ </summary>
+	<returns>Returns the set of all subgroups as a <c>FiniteSet</c>.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.FindFactors(System.Int32)">
+	<summary>
+ Finds all factors of a given number.
+ </summary>
+	<param name="num">The number for which to find the factors.</param>
+	<returns>Returns all the factors of a given integer as a <c>List</c>.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.SubgroupIndex(Mathematics.Algebra.FiniteGroup{`0})">
+	<summary>
+ Returns the index of this group as a subgroup of a given supergroup.
+ </summary>
+	<param name="superGroup">The subgroup whose index is to be returned.</param>
+	<exception cref="T:Mathematics.Algebra.NotSubgroupException">Throws NotSubgroupException if this group is not a subgroup of parameter 'superGroup'.</exception>
+	<returns>Returns the index of this group as a subgroup of a given supergroup.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.TrivialSubgroup">
+	<summary>
+ Returns the trivial subgroup of this group.
+ </summary>
+	<returns>Returns the trivial subgroup of this group.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.SubgroupClosedProperties">
+	<summary>
+ Returns a Dictionary(Of String, Boolean) of all the properties known about this group that are inherited by any subgroup.
+ </summary>
+	<returns>Returns a Dictionary(Of String, Boolean) of all the properties known about this group that are inherited by any subgroup.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.QuotientClosedProperties">
+	<summary>
+ Returns a Dictionary(Of String, Boolean) of all the properties known about this group that are inherited by any quotient group.
+ </summary>
+	<returns>Returns a Dictionary(Of String, Boolean) of all the properties known about this group that are inherited by any quotient group.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteGroup`1.ProductClosedProperties``1(Mathematics.Algebra.FiniteGroup{``0})">
+	<summary>
+ Returns a Dictionary(Of String, Boolean) of all the properties known about this group and another group that are inherited by a direct product.
+ </summary>
+	<typeparam name="G">The Type of elements in the other group.</typeparam>
+	<param name="otherGroup">The other group with which a direct product is being formed.</param>
+	<returns>Returns a Dictionary(Of String, Boolean) of all the properties known about this group and another group that are inherited by a direct product.</returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteGroup`1.QuotientMap">
+	<summary>
+ The map for a quotient group.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteGroup`1.DirectProductMap`1">
+	<summary>
+ The map for a direct product (cartesian product) group.
+ </summary>
+	<typeparam name="G"></typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteGroup`1">
+	<summary>
+ Represents a finite group with elements of type T.
+ </summary>
+	<typeparam name="T">The Type of element in the group.</typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.NotSubgroupException">
+	<summary>
+ Represents an error that an object was not a subgroup. 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Mathematics.IntegerNumber">
+	<summary>
+ Provides a wrapper for the Long type that is usable by other Mathematics classes.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Mathematics.CommonFunctions">
+	<summary>
+ Provides static methods for common mathematical functions.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.Plane">
+	<summary>
+ Represents a plane.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteCommutativeRing`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Creates a new finite commutative ring.
+ </summary>
+	<param name="newSet">The set for the commutative ring.</param>
+	<param name="newAddition">The addition operation for the commutative ring.</param>
+	<param name="newMultiplication">The multiplication operation for the commutative ring.</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if 'newOperation' does not satisfy all the commutative ring axioms.</exception>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteCommutativeRing`1.IsPrimeIdeal(Mathematics.FiniteSet{`0})">
+	<summary>
+ Determines whether a set is a prime ideal of this commutative ring.
+ </summary>
+	<param name="testIdeal"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteCommutativeRing`1.Radical(Mathematics.FiniteSet{`0})">
+	<summary>
+ Returns the radical of an ideal of the commutative ring.
+ </summary>
+	<param name="ideal">The ideal for which to create its radical.</param>
+	<exception cref="T:Mathematics.Algebra.NotIdealException">Throws NotIdealException if parameter 'ideal' is not an idea of the commutative ring.</exception>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteCommutativeRing`1">
+	<summary>
+ Represents a finite commutative ring with elements of type T.
+ </summary>
+	<typeparam name="T">The Type of element in the commutative ring.</typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.IDivideable`1">
+	<summary>
+ Defines methods for dividing two elements as well as multiplying them and retrieving the multiplicative identity.
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.#ctor">
+	<summary>
+ Initializes a new instance of the Matrix class of size 3 x 3 with elements of type T.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.#ctor(System.Int32,System.Int32)">
+	<summary>
+ Initializes a new instance of the Matrix class of size newHeight and newWidth with elements of type T.
+ </summary>
+	<param name="newHeight">Number of rows in the new matrix.</param>
+	<param name="newWidth">Number of columns in the new matrix.</param>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.Matrix`1.Count">
+	<summary>
+ Gets the number of components in the matrix (Width * Height).
+ </summary>
+	<value>Returns an <c>Integer</c> representing the number of componenets in the matrix.</value>
+	<returns>Returns the number of components in the matrix.</returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.Matrix`1.Width">
+	<summary>
+ Gets the width of the matrix (number of columns).
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.Matrix`1.Height">
+	<summary>
+ Gets the height of the matrix (number of rows).
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.Matrix`1.Item(System.Int32,System.Int32)">
+	<summary>
+ Gets or sets the component at (rowIndex, columnIndex).
+ </summary>
+	<param name="rowIndex"></param>
+	<param name="columnIndex"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.Matrix`1.AdditiveIdentity">
+	<summary>
+ Returns the additive identity matrix of appropriate size.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.Equals(Mathematics.Algebra.Matrix{`0})">
+	<summary>
+ Returns whether this matrix and matrix2 are identical.
+ </summary>
+	<param name="matrix2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.Equals(Mathematics.Algebra.Matrix{`0},Mathematics.Algebra.Matrix{`0})">
+	<summary>
+ Returns whether matrix1 and matrix2 are identical.
+ </summary>
+	<param name="matrix1"></param>
+	<param name="matrix2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.Add(Mathematics.Algebra.Matrix{`0})">
+	<summary>
+ Returns the sum of this matrix and matrix2.
+ </summary>
+	<param name="matrix2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.Clone">
+	<summary>
+ Returns an identical copy of this matrix.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.HadamardProduct(Mathematics.Algebra.Matrix{`0})">
+	<summary>
+ Returns the Hadamard Product of this matrix and matrix2.
+ </summary>
+	<param name="matrix2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.IsSquare">
+	<summary>
+ Returns whether or not this matrix is a square matrix.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.Multiply(Mathematics.Algebra.Matrix{`0})">
+	<summary>
+ Returns the product of this matrix and matrix2.
+ </summary>
+	<param name="matrix2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.Minor(System.Int32,System.Int32)">
+	<summary>
+ Returns the minor of this matrix by removing the row at rowIndex and column at columnIndex.
+ </summary>
+	<param name="rowIndex"></param>
+	<param name="columnIndex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.ScalarMultiply(`0)">
+	<summary>
+ Returns the scalar product of this matrix with scalar.
+ </summary>
+	<param name="scalar"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.Subtract(Mathematics.Algebra.Matrix{`0})">
+	<summary>
+ Returns the difference of this matrix by matrix2.
+ </summary>
+	<param name="matrix2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.Matrix`1.ToString">
+	<summary>
+ Returns a string representation of this matrix.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.Matrix`1">
+	<summary>
+ Represents a matrix with elements of type T.
+ </summary>
+	<typeparam name="T">The Type of elements used for entries in the matrix.</typeparam>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteMonoid`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Creates a new finite monoid.
+ </summary>
+	<param name="newSet">The set for the monoid.</param>
+	<param name="newOperation">The operation for the monoid.</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if 'newOperation' does not have an identity element or is not associative.</exception>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteMonoid`1.IdentityElement">
+	<summary>
+ Returns the identity element of the structure (the identity of the operation).
+ </summary>
+	<value>The identity element of the structure.</value>
+	<returns>Returns the identity element of the structure.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteMonoid`1.IsHomomorphism``1(Mathematics.Algebra.FiniteMonoid{``0},Mathematics.FiniteFunction{`0,``0})">
+	<summary>
+ Determines whether a function is a homomorphism from this monoid to another monoid.
+ </summary>
+	<typeparam name="G">The Type of elements in the other monoid.</typeparam>
+	<param name="codomain">The other monoid that serves as the codomain for the function.</param>
+	<param name="testFunction">The function to test.</param>
+	<returns>Returns <c>True</c> if the function is a homomorphism between the monoids, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteMonoid`1.IsIsomorphism``1(Mathematics.Algebra.FiniteMonoid{``0},Mathematics.FiniteFunction{`0,``0})">
+	<summary>
+ Determines whether a function is a isomorphism from this monoid to another monoid. In other words, it's a bijective homomorphism.
+ </summary>
+	<typeparam name="G">The Type of elements in the other monoid.</typeparam>
+	<param name="codomain">The other monoid that serves as the codomain for the function.</param>
+	<param name="testFunction">The function to test.</param>
+	<returns>Returns <c>True</c> if the function is an isomorphism between the monoids, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteMonoid`1.IsMonoid(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Determines whether a given finite set and operation will form a finite monoid.
+ </summary>
+	<param name="testSet">The finite set to test.</param>
+	<param name="testOperation">The operation to test.</param>
+	<returns>Return <c>True</c> if the given set and operation form a monoid, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteMonoid`1.IsMonoid(Mathematics.Algebra.FiniteSemigroup{`0})">
+	<summary>
+ Determines whether a given finite semigroup will form a finite monoid.
+ </summary>
+	<param name="testSemigroup">The semigroup to test.</param>
+	<returns>Returns <c>True</c> if the given semigroup is also a monoid, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteMonoid`1">
+	<summary>
+ Represents a finite monoid with elements of type T.
+ </summary>
+	<typeparam name="T">The Type of element in the monoid.</typeparam>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Sphere.MaximalCrossection">
+	<summary>
+ Returns a maximal crossection of the sphere that is parallel to the xy-plane.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.Sphere">
+	<summary>
+ Represents a sphere.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Circle.Area">
+	<summary>
+ Determines the area of the circle.
+ </summary>
+	<returns>Returns the area of the circle.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Circle.Circumference">
+	<summary>
+ Determines the circumference of the circle.
+ </summary>
+	<returns>Returns the circumference of the circle.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Circle.ClosestPointOnCircle(Mathematics.Geometry.PointF3@)">
+	<summary>
+ Determines the closest point on the surface of the circle to a given point.
+ </summary>
+	<param name="pt">The point from which to find the closest point.</param>
+	<returns>Returnss the closest point on the surface of the circle to a given point.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Circle.Contains(Mathematics.Geometry.PointF3)">
+	<summary>
+ Determines whether the circle contains a given point.
+ </summary>
+	<param name="pt">The point being tested.</param>
+	<returns>Returns whether or not the circle contains a given point.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Circle.Distance(Mathematics.Geometry.PointF3@)">
+	<summary>
+ Determines the distance from the circle to a given point.
+ </summary>
+	<param name="pt">The point from which to measure the distance.</param>
+	<returns>Returns the distance from the circle to a given point.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Circle.Distance(Mathematics.Geometry.Line)">
+	<summary>
+ Determines the distance from the nearest point on the surface of the circle to the nearest point on a given line.
+ </summary>
+	<param name="line2">The line from which to find the distance.</param>
+	<returns>Returns the distance from the nearest point on the surface of the circle to the nearest point on a given line.</returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.Circle">
+	<summary>
+ Represents a circle.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.LineSegment">
+	<summary>
+ Represents a line segment.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.ComplexNumber.PolarForm">
+	<summary>
+ Returns a pair of complex numbers of the form re^(i*phi). The first number is 'r'. The second number is 'phi'.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.ComplexNumber">
+	<summary>
+ Represents a complex number that is usable by other Mathematics classes.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Rectangle.Distnace(Mathematics.Geometry.PointF3@)">
+	<summary>
+ Returns the distance between a point and this rectangle.
+ </summary>
+	<param name="pt"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.Rectangle">
+	<summary>
+ Represents a rectangle.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Topology.FiniteTopologicalSpace`1.IsKolmogorovSpace">
+	<summary>
+ Determine whether this space is a Kolmogorov Space (T_0).
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Topology.FiniteTopologicalSpace`1.IsFrechet">
+	<summary>
+ Determine whether this space is a Fréchet Space (T_1).
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Topology.FiniteTopologicalSpace`1.IsContinuousFunction``2(Mathematics.Topology.FiniteTopologicalSpace{``0}@,Mathematics.Topology.FiniteTopologicalSpace{``1}@,Mathematics.FiniteFunction{``0,``1}@)">
+	<summary>
+ Determines whether a function between two topological spaces is continuous.
+ </summary>
+	<typeparam name="D">The Type of elements in the domain.</typeparam>
+	<typeparam name="C">The Type of elements in the codomain.</typeparam>
+	<param name="Domain">The topological space that is the domain of the function.</param>
+	<param name="Codomain">The topological space that is the codomain of the function.</param>
+	<param name="TestFunction">The function to test for continuity.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteVectorSpace`2.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0},Mathematics.FiniteLeftExternalBinaryOperation{`1,`0},Mathematics.Algebra.FiniteField{`1})">
+	<summary>
+ Creates a new finite vector space.
+ </summary>
+	<param name="newSet">The set for the vector space.</param>
+	<param name="newAddition">The addition operation for the vector space.</param>
+	<param name="newMultiplication">The multiplication operation for the vector space.</param>
+	<param name="newScalarField">The field of scalars for the vector space.</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if 'newOperation' does not satisfy all the vector space axioms.</exception>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteVectorSpace`2.ScalarField">
+	<summary>
+ Returns the scalar field associated with the module.
+ </summary>
+	<value>The scalar field associated with the module.</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteVectorSpace`2.TrivialSubspace">
+	<summary>
+ Returns the trivial subspace of this vector space.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteVectorSpace`2">
+	<summary>
+ Represents a finite vector space with elements of type T and scalars of type Scalar.
+ </summary>
+	<typeparam name="T">The Type of element in the vector space.</typeparam>
+	<typeparam name="Scalar">The Type of scalar elements.</typeparam>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF2.#ctor">
+	<summary>
+ Initializes a new instance of the PointF2 class to the point (0, 0).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF2.#ctor(System.Double,System.Double)">
+	<summary>
+ Initializes a new instance of the PointF2 class with the specified coordinates.
+ </summary>
+	<param name="newX"></param>
+	<param name="newY"></param>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Geometry.PointF2.X">
+	<summary>
+ Gets or sets the x-coordinate of this PointF2.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Geometry.PointF2.Y">
+	<summary>
+ Gets or sets the y-coordinate of this PointF2.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF2.Distance(Mathematics.Geometry.PointF2@)">
+	<summary>
+ Determines the distance between this PointF2 and another.
+ </summary>
+	<param name="pt2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF2.Equals(Mathematics.Geometry.PointF2@)">
+	<summary>
+ Determines whether the this PointF2 and another are equal.
+ </summary>
+	<param name="pt2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF2.ToString">
+	<summary>
+ Converts this PointF2 to a human readable string.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF2.op_Equality(Mathematics.Geometry.PointF2,Mathematics.Geometry.PointF2)">
+	<summary>
+ Indicates whether two PointF2 objects are equal.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF2.op_Inequality(Mathematics.Geometry.PointF2,Mathematics.Geometry.PointF2)">
+	<summary>
+ Indicates whether two PointF2 objects are not equal.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF2.op_Addition(Mathematics.Geometry.PointF2,Mathematics.Geometry.Vector2)">
+	<summary>
+ Converts this PointF2 to a human readable string.
+ </summary>
+	<param name="pt"></param>
+	<param name="vect"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.PointF2">
+	<summary>
+ Represents a double-precision 2-dimensional point.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Mathematics.IMultiplicativeIdentity`1">
+	<summary>
+ Defines a method for retrieving the multiplicative identity of a set of elements.
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.IMultipliable`1">
+	<summary>
+ Defines a method for dividing two elements.
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.Cuboid">
+	<summary>
+ Represents a cuboid (a three dimensional solid with 6 sides that are all rectangular).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Line.ClosestPointOnLine(Mathematics.Geometry.PointF3@)">
+	<summary>
+ Returns the closest point on the line to a given point.
+ </summary>
+	<param name="pt">The point from which to find the nearest point on the line.</param>
+	<returns>Returns the closest point on the line to a given point.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Line.Distance(Mathematics.Geometry.PointF3@)">
+	<summary>
+ Determines the shortest distance from a given point to the line.
+ </summary>
+	<param name="pt">The point from which to find the distance.</param>
+	<returns>Returns the shortest distance from a given point to the line.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Line.Distance(Mathematics.Geometry.Line@)">
+	<summary>
+ Determines the shortest distance from another given line to this line.
+ </summary>
+	<param name="line2">The line from which to find the distance.</param>
+	<returns>Returns the shortest distance from another given line to this line.</returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.Line">
+	<summary>
+ Represents a line.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF3.#ctor">
+	<summary>
+ Initializes a new instance of the PointF3 class to the point (0, 0, 0).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF3.#ctor(System.Double,System.Double,System.Double)">
+	<summary>
+ Initializes a new instance of the PointF3 class with the specified coordinates.
+ </summary>
+	<param name="newX"></param>
+	<param name="newY"></param>
+	<param name="newZ"></param>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Geometry.PointF3.Z">
+	<summary>
+ Gets or sets the z-coordinate of this PointF3.
+ </summary>
+	<value>Value</value>
+	<returns>Returns</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF3.Distance(Mathematics.Geometry.PointF3@)">
+	<summary>
+ Determines the distance between this PointF3 and another.
+ </summary>
+	<param name="pt2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF3.Equals(Mathematics.Geometry.PointF3@)">
+	<summary>
+ Determines whether the this PointF3 and another are equal.
+ </summary>
+	<param name="pt2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF3.ToString">
+	<summary>
+ Converts this PointF3 to a human readable string.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF3.op_Equality(Mathematics.Geometry.PointF3,Mathematics.Geometry.PointF3)">
+	<summary>
+ Indicates whether two PointF3 objects are equal.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF3.op_Inequality(Mathematics.Geometry.PointF3,Mathematics.Geometry.PointF3)">
+	<summary>
+ Indicates whether two PointF3 objects are not equal.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.PointF3.op_Addition(Mathematics.Geometry.PointF3,Mathematics.Geometry.Vector3)">
+	<summary>
+ Translates a PointF3 by the specified vector.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.PointF3">
+	<summary>
+ Represents a double-precision 3-dimensional point.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Mathematics.IAddable`1">
+	<summary>
+ Defines a method for adding two elements together.
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.#ctor">
+	<summary>
+ Initializes a new instance of the Vector2 class to the vector (0,0).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.#ctor(System.Double,System.Double)">
+	<summary>
+ Initializes a new instance of the Vector2 class with the specified components.
+ </summary>
+	<param name="newI"></param>
+	<param name="newJ"></param>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.#ctor(Mathematics.Geometry.PointF2,Mathematics.Geometry.PointF2)">
+	<summary>
+ Initializes a new instance of the Vector2 class using the specified start and end points.
+ </summary>
+	<param name="startPt"></param>
+	<param name="endPt"></param>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.#ctor(Mathematics.Geometry.PointF2,Mathematics.Geometry.PointF2,System.Double)">
+	<summary>
+ Initializes a new instance of the Vector2 class using the specified start and direction points with the specified magnitude.
+ </summary>
+	<param name="startPt"></param>
+	<param name="directionPt"></param>
+	<param name="magnitude"></param>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.#ctor(Mathematics.Geometry.Vector2,System.Double)">
+	<summary>
+ Initializes a new instance of the Vector2 class in the same direction as the specified vector with the specified magnitude.
+ </summary>
+	<param name="directionVect"></param>
+	<param name="magnitude"></param>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Geometry.Vector2.I">
+	<summary>
+ Gets or sets the I-component of this Vector2.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Geometry.Vector2.J">
+	<summary>
+ Gets or sets the x-coordinate of this Vector2.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Geometry.Vector2.ZeroVector">
+	<summary>
+ Gets the 2-dimensional zero-vector.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.Add(Mathematics.Geometry.Vector2@)">
+	<summary>
+ Adds this Vector2 and another.
+ </summary>
+	<param name="vect2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.CrossProduct(Mathematics.Geometry.Vector2@)">
+	<summary>
+ Takes the cross-product of this Vector2 and another.
+ </summary>
+	<param name="vect2"></param>
+	<returns></returns>
+	<remarks>This returns a Vector3, not a Vector2.</remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.DotProduct(Mathematics.Geometry.Vector2@)">
+	<summary>
+ Takes the dot-product of this Vector2 and another.
+ </summary>
+	<param name="vect2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.Equals(Mathematics.Geometry.Vector2@)">
+	<summary>
+ Shadowed. Determines whether the this Vector2 and another are equal.
+ </summary>
+	<param name="vect2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.Length">
+	<summary>
+ Determines whether the length of this Vector2.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.NormalizedVector">
+	<summary>
+ Determines the unit-length equivalent vector of this Vector2.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.Parallel(Mathematics.Geometry.Vector2@)">
+	<summary>
+ Determines whether the this Vector2 and another are parallel.
+ </summary>
+	<param name="vect2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.Perpendicular(Mathematics.Geometry.Vector2@)">
+	<summary>
+ Determines whether the this Vector2 and another are perpendicular.
+ </summary>
+	<param name="vect2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.ScalarMultiply(System.Double)">
+	<summary>
+ Multiplies this Vector2 by a scalar.
+ </summary>
+	<param name="scalar"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.Subtract(Mathematics.Geometry.Vector2@)">
+	<summary>
+ Subtracts a Vector2 from this Vector2.
+ </summary>
+	<param name="vect2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.ToString">
+	<summary>
+ Converts this Vector2 to a human readable string.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.Rotate(System.Double)">
+	<summary>
+ Rotates this Vector2 by a given number of radians.
+ </summary>
+	<param name="angle">The angle to rotate by in radians.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.op_Equality(Mathematics.Geometry.Vector2,Mathematics.Geometry.Vector2)">
+	<summary>
+ Indicates whether two Vector2 objects are equal.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.op_Inequality(Mathematics.Geometry.Vector2,Mathematics.Geometry.Vector2)">
+	<summary>
+ Indicates whether two Vector2 objects are not equal.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.op_Addition(Mathematics.Geometry.Vector2,Mathematics.Geometry.Vector2)">
+	<summary>
+ Adds two Vector2 together.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.op_Subtraction(Mathematics.Geometry.Vector2,Mathematics.Geometry.Vector2)">
+	<summary>
+ Subtracts two Vector2 together.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.op_Multiply(System.Double,Mathematics.Geometry.Vector2)">
+	<summary>
+ Multiplies a Vector2 by a scalar.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Geometry.Vector2.op_Multiply(Mathematics.Geometry.Vector2,System.Double)">
+	<summary>
+ Multiplies a Vector2 by a scalar.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.Vector2">
+	<summary>
+ Represents a 2-dimensional vector.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteAbelianGroup`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Creates a new finite abelian group.
+ </summary>
+	<param name="newSet">The set for the abelian group.</param>
+	<param name="newOperation">The operation for the abelian group.</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if 'newOperation' does not have an identity element, does not have inverses for every element, is not commutative, or is not associative.</exception>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteAbelianGroup`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0},System.Collections.Generic.Dictionary{System.String,System.Boolean})">
+	<summary>
+ Creates a new finite abelian group and stores any initially known properties of the group.
+ </summary>
+	<param name="newSet">The set for the abelian group.</param>
+	<param name="newOperation">The operation for the abelian group.</param>
+	<param name="knownProperties">Any known properties about the group already.</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if 'newOperation' does not have an identity element, does not have inverses for every element, is not commutative, or is not associative.</exception>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteAbelianGroup`1.IsAbelianGroup(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Determines whether a given finite set and operation will form a finite abelian group.
+ </summary>
+	<param name="testSet">The finite set to test.</param>
+	<param name="testOperation">The operation to test.</param>
+	<returns>Returns <c>True</c> if the given set and operation form an abelian group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteAbelianGroup`1.IsAbelianGroup(Mathematics.Algebra.FiniteGroup{`0})">
+	<summary>
+ Determines whether a given finite group will form a finite abelian group.
+ </summary>
+	<param name="testGroup">The group to test.</param>
+	<returns>Returns <c>True</c> if the given group is also an abelian group, <c>False</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteAbelianGroup`1">
+	<summary>
+ Represents a finite abelian group with elements of type T.
+ </summary>
+	<typeparam name="T">The Type of element in the abelian group.</typeparam>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteMagma`1.#ctor(Mathematics.FiniteSet{`0},Mathematics.FiniteBinaryOperation{`0})">
+	<summary>
+ Creates a new finite magma
+ </summary>
+	<param name="newSet">The set for the magma.</param>
+	<param name="newOperation">The operation for the magma.</param>
+	<exception cref="T:Mathematics.CommonExceptions.DoesNotSatisfyPropertyException">Throws DoesNotSatisfyPropertyException if the codomain of 'newOperation' is not the set of the magma.</exception>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteMagma`1.theSet">
+	<summary>
+ Returns the set of the structure.
+ </summary>
+	<value>The set of the structure.</value>
+	<returns>Returns the set of the structure.</returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.Algebra.FiniteMagma`1.Operation">
+	<summary>
+ Returns the operation of the structure.
+ </summary>
+	<value>The operation of the structure.</value>
+	<returns>Returns the operation of the structure.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteMagma`1.ApplyOperation(Mathematics.Tuple)">
+	<summary>
+ Returns the result of applying the operation of the structure to a Tuple (pair) of elements.
+ </summary>
+	<param name="input">The Tuple (pair) to apply the operation to.</param>
+	<returns>The output of the operation applied to the given input.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.FiniteMagma`1.SetOfSquareElements">
+	<summary>
+ Returns the set of all elements of the structure 'a' such that there exists a 'b' where 'a' = 'b' * 'b'.
+ </summary>
+	<returns>The finite set of all square elements.</returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.FiniteMagma`1">
+	<summary>
+ Represents a finite magma with elements of type T.
+ </summary>
+	<typeparam name="T">The Type of element in the magma.</typeparam>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteFunction`2.Composition``1(Mathematics.FiniteFunction{``0,`0})">
+	<summary>
+ Returns a composition of function in which this function is the outer function of the composition.
+ </summary>
+	<typeparam name="S"></typeparam>
+	<param name="innerFunction"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteFunction`2.ImageSet">
+	<summary>
+ Returns the image of the function.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteFunction`2.InverseImageSet(Mathematics.FiniteSet{`1}@)">
+	<summary>
+ Returns the inverse image of a set.
+ </summary>
+	<param name="ResultSet">The sets of elements who inverse image is desired.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteFunction`2.InverseFunction">
+	<summary>
+ Returns the inverse of this function if it exists. Otherwise throws an UndefinedException.
+ </summary>
+	<returns></returns>
+	<exception cref="T:Mathematics.CommonExceptions.UndefiniedException">Throws an UndefinedException if an inverse function does not exist (ie. if this function is not bijective).</exception>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Geometry.Vector3">
+	<summary>
+ Represents a 3-dimensional vector.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.modAlgebraFiniteExamples.Dihedral8Group">
+	<summary>
+ Returns the dihedral group of order 8, as represented by matrices.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.modAlgebraFiniteExamples.QuaternionGroup">
+	<summary>
+ Returns the quaternion group of order 8, as represented by matrices.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.modAlgebraFiniteExamples.SymmetricGroup(System.Int32)">
+	<summary>
+ Returns the symmetric group of order n!, as represented by permutation matrices.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.modAlgebraFiniteExamples.AlternatingGroup(System.Int32)">
+	<summary>
+ Returns the alternating group of order n!/2, as represented by permutation matrices.
+ </summary>
+	<param name="n"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.modAlgebraFiniteExamples.Heisenberg3Group">
+	<summary>
+ Returns the Heisenberg group of order 27, as represented by 3x3 matrices with entries from Zmod3.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.modAlgebraFiniteExamples.SquareMatrixNAdditionMap`1">
+	<summary>
+ The map corresoding to matrix addition of square matrices of size N.
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.modAlgebraFiniteExamples.SquareMatrixNMultiplicationMap`1">
+	<summary>
+ The map corresoding to matrix multiplication of square matrices of size N.
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.ISubtractable`1">
+	<summary>
+ Defines methods for subtracting two elements as well as adding them and retrieving the additive identity.
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="T:Mathematics.Algebra.Vector`1">
+	<summary>
+ Represents a vector with components of type T.
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.SquareMatrix`1.#ctor">
+	<summary>
+ Initializes a new instance of the SquareMatrix class of size 3 x 3 with elements of type T.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.SquareMatrix`1.#ctor(System.Int32)">
+	<summary>
+ Initializes a new instance of the SquareMatrix class of size newWidth with elements of type T.
+ </summary>
+	<param name="newWidth">The width and height of the new SquareMatrix.</param>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.SquareMatrix`1.Determinant">
+	<summary>
+ Returns the determinant of the matrix by using Laplacian expansion
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.SquareMatrix`1.LUBackSubstitution(Mathematics.Algebra.Vector{Mathematics.IntegerNumber},Mathematics.Algebra.Vector{`0})">
+	<summary>
+ Performs a back substitution on a LU Decomposed matrix.
+ </summary>
+	<param name="LUDecompPermutation">The Vector the recorded the row permutation effected by the partial pivoting during the LUDecomposition.</param>
+	<param name="rhsMatrix"></param>
+	<remarks></remarks>
+</member><member name="M:Mathematics.Algebra.SquareMatrix`1.LUDecomposition">
+	<summary>
+ Performs a Lower/Upper Decomposition on the matrix.
+ </summary>
+	<returns>A Vector that records the row permutation effected by the partial pivoting.</returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.IAdditiveIdentity`1">
+	<summary>
+ Defines a method for retrieving the additive identity of a set of elements.
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="P:Mathematics.FiniteSet`1.Element(System.Int32)">
+	<summary>
+ Gets/Sets an element in this set.
+ </summary>
+	<param name="index"></param>
+	<exception cref="T:System.IndexOutOfRangeException">Throws IndexOutOfRangeException if parameter 'index' is out of range for the set.</exception>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mathematics.FiniteSet`1.NullSet">
+	<summary>
+ Returns the null set (also known as the empty set).
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.AddElement(`0)">
+	<summary>
+ Adds an element to this set.
+ </summary>
+	<param name="newElement"></param>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.AddElementWithoutCheck(`0)">
+	<summary>
+ Add an element to this set, without checking to see if it's already in the set.
+ </summary>
+	<param name="newElement"></param>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.Cardinality">
+	<summary>
+ Returns the number of elements in this set.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.Clone">
+	<summary>
+ Creates a clone of this set.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.Contains(`0)">
+	<summary>
+ Determines whether this set contains a given element.
+ </summary>
+	<param name="elem"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.DeleteElement(System.Int32)">
+	<summary>
+ Deletes an elements from this set.
+ </summary>
+	<param name="index"></param>
+	<exception cref="T:System.IndexOutOfRangeException">Throws IndexOutOfRangeException if parameter 'index' is out of range for the set.</exception>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.Difference(Mathematics.FiniteSet{`0})">
+	<summary>
+ Returns the set-theoretic difference of this set minus another set.
+ </summary>
+	<param name="otherSet"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.DirectProduct``1(Mathematics.FiniteSet{``0})">
+	<summary>
+ Returns the direct product (also known as the cartesian product) of this set with another set.
+ </summary>
+	<typeparam name="G"></typeparam>
+	<param name="Set2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.Equals(Mathematics.FiniteSet{`0})">
+	<summary>
+ Determines whether this set is equal to a given set.
+ </summary>
+	<param name="Set2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.IndexOf(`0)">
+	<summary>
+ Returns the index of 'elem' in the set.
+ </summary>
+	<param name="elem">The element for which to find the index.</param>
+	<returns>Returns the index of 'elem' in the set or -1 if the element is not found.</returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.Intersection(Mathematics.FiniteSet{`0})">
+	<summary>
+ Returns the intersection of this set with a given set.
+ </summary>
+	<param name="otherSet"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.IsSubsetOf(Mathematics.FiniteSet{`0})">
+	<summary>
+ Determines whether this set is a subset of a given set.
+ </summary>
+	<param name="superSet"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.IsPartition(Mathematics.FiniteSet{Mathematics.FiniteSet{`0}})">
+	<summary>
+ Determines whether a given set of sets is a partition of this set.
+ </summary>
+	<param name="testPartition"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.IsProperSubsetOf(Mathematics.FiniteSet{`0})">
+	<summary>
+ Determines whether this set is a proper subset of a given set.
+ </summary>
+	<param name="superSet"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.PowerSet">
+	<summary>
+ Returns the powerset of this set.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.ToString">
+	<summary>
+ Returns a string listing all elements of this set.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.Union(Mathematics.FiniteSet{`0})">
+	<summary>
+ Returns the union of this set with another set.
+ </summary>
+	<param name="otherSet"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.op_Addition(Mathematics.FiniteSet{`0},Mathematics.FiniteSet{`0})">
+	<summary>
+ Performs set union on the two sets.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.op_Subtraction(Mathematics.FiniteSet{`0},Mathematics.FiniteSet{`0})">
+	<summary>
+ Performs set-theoretic difference on the two sets.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.op_BitwiseAnd(Mathematics.FiniteSet{`0},Mathematics.FiniteSet{`0})">
+	<summary>
+ Performs set intersection on the two sets.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Mathematics.FiniteSet`1.op_BitwiseOr(Mathematics.FiniteSet{`0},Mathematics.FiniteSet{`0})">
+	<summary>
+ Performs set union on the two sets.
+ </summary>
+	<param name="lhs"></param>
+	<param name="rhs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Mathematics.FiniteSet`1">
+	<summary>
+ Represents a finite set with elements of type T
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

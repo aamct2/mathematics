@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Mathematics", "mathematics\Mathematics.vbproj", "{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Mathematics VB Unit Tests", "Mathematics VB Unit Tests\Mathematics VB Unit Tests.vbproj", "{06C7E13E-F0E1-4765-B8FF-773CE277584B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Mathematics FrontEnd", "Mathematics FrontEnd\Mathematics FrontEnd.vbproj", "{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Release|Win32.ActiveCfg = Release|Any CPU
+		{7F3CD0C8-92BB-4842-B118-B9ADE1A7E5D6}.Release|x86.ActiveCfg = Release|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Release|Win32.ActiveCfg = Release|Any CPU
+		{06C7E13E-F0E1-4765-B8FF-773CE277584B}.Release|x86.ActiveCfg = Release|Any CPU
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Debug|Win32.ActiveCfg = Debug|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Debug|x86.ActiveCfg = Debug|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Debug|x86.Build.0 = Debug|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Release|Any CPU.ActiveCfg = Release|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Release|Mixed Platforms.Build.0 = Release|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Release|Win32.ActiveCfg = Release|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Release|x86.ActiveCfg = Release|x86
+		{9DB10EC9-90EA-4DB5-ABC0-D360BCD1C318}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

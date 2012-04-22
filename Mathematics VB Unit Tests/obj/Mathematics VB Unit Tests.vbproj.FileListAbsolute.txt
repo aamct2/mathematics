@@ -1,0 +1,12 @@
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.dll
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.pdb
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.xml
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics.dll
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics.pdb
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics.xml
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Debug\Mathematics_Unit_Tests.Resources.resources
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Debug\Mathematics VB Unit Tests.vbproj.GenerateResource.Cache
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Debug\Mathematics Unit Tests.dll
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Debug\Mathematics Unit Tests.xml
+D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Debug\Mathematics Unit Tests.pdb

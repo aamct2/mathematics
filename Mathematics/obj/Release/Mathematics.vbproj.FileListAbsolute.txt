@@ -1,0 +1,14 @@
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\bin\Release\Mathematics.dll
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\bin\Release\Mathematics.pdb
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\bin\Release\Mathematics.xml
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\obj\Release\ResolveAssemblyReference.cache
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\obj\Release\Mathematics.dll
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\obj\Release\Mathematics.xml
+D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\obj\Release\Mathematics.pdb
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Release\Mathematics.dll
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Release\Mathematics.pdb
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Release\Mathematics.xml
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\ResolveAssemblyReference.cache
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.dll
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.xml
+D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.pdb
