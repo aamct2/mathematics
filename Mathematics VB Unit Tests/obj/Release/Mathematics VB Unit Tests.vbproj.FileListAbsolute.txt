@@ -28,3 +28,18 @@ D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release
 D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.dll
 D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.xml
 D:\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.pdb
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.dll
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.pdb
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.xml
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics.dll
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\nunit.framework.dll
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics.pdb
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics.xml
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\bin\Debug\nunit.framework.xml
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics_Unit_Tests.Resources.resources
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.dll
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.xml
+C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.pdb

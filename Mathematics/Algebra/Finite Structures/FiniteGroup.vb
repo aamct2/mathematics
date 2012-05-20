@@ -114,6 +114,53 @@ Namespace Algebra
         End Function
 
         ''' <summary>
+        ''' Returns the centralizer (as a group) of a subset of a group.
+        ''' </summary>
+        ''' <param name="subgroup"></param>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function CentralizerSubgroup(ByVal subgroup As FiniteGroup(Of T)) As FiniteGroup(Of T)
+            Return New FiniteGroup(Of T)(Me.Centralizer(subgroup.theSet), Me.Operation)
+        End Function
+
+        ''' <summary>
+        ''' Returns the centralizer (as a subset) of a subset of a group.
+        ''' </summary>
+        ''' <param name="subset"></param>
+        ''' <returns></returns>
+        ''' <remarks>C_G(S) = {g \in G | sg = gs \forall s \in S}</remarks>
+        Public Function Centralizer(ByVal subset As FiniteSet(Of T)) As FiniteSet(Of T)
+            If subset.IsSubsetOf(Me.theSet) = False Then
+                Throw New Exception("The 'subset' variable is not actually a subset of the group.")
+            End If
+
+            Dim newSet As New FiniteSet(Of T)
+            Dim setOfCentralizers As New FiniteSet(Of FiniteSet(Of T))
+
+            Dim index As Integer
+            For index = 0 To subset.Cardinality - 1
+                Dim curElem As T = subset.Element(index)
+                Dim curCentralizer As FiniteSet(Of T) = Me.Centralizer(curElem)
+
+                If (curCentralizer.Cardinality > 0) Then
+                    setOfCentralizers.AddElement(curCentralizer)
+                End If
+            Next index
+
+            If (setOfCentralizers.Cardinality > 0) Then
+                newSet = setOfCentralizers.Element(0)
+
+                For index = 1 To setOfCentralizers.Cardinality - 1
+                    Dim curSet As FiniteSet(Of T) = setOfCentralizers.Element(index)
+
+                    newSet = newSet.Intersection(curSet)
+                Next index
+            End If
+
+            Return newSet
+        End Function
+
+        ''' <summary>
         ''' Returns the centralizer, with respect to this group, of a given element of the group.
         ''' </summary>
         ''' <param name="elem">The element whose centralizer, with respect to this group, we are to form.</param>
@@ -460,7 +507,7 @@ Namespace Algebra
                         rows(rowIndex).Item(colIndex) = Me.theSet.IndexOf(Me.ApplyOperation(tup)) + 1
                     Next colIndex
                 End If
-                
+
                 grpTable.Rows.Add(rows(rowIndex))
             Next
 
@@ -820,7 +867,7 @@ Namespace Algebra
         ''' </summary>
         ''' <param name="superGroup">The supergroup (or ambient group) to test if this group is a maximal subgroup of it.</param>
         ''' <returns>Returns <c>True</c> if the group is a maximal subgroup of a given group, <c>False</c> otherwise.</returns>
-        ''' <remarks></remarks>
+        ''' <remarks>A maximal subgroup is a proper subgroup that is not strictly contained by any other proper subgroup.</remarks>
         Public Function IsMaximalSubgroupOf(ByVal superGroup As FiniteGroup(Of T)) As Boolean
             'Check to make sure it is a proper subgroup
             If Me.IsProperSubgroupOf(superGroup) = False Then Return False
@@ -857,6 +904,22 @@ Namespace Algebra
                     End If
                 End If
 
+                'Metacyclic implies metabelian, check to see if we've calculated that already.
+                If Me.groupProperties.ContainsKey("metacyclic") = True Then
+                    If Me.groupProperties.Item("metacyclic") = True Then
+                        Me.groupProperties.Add("metabelian", True)
+                        Return True
+                    End If
+                End If
+
+                'Cyclic implies metabelian, check to see if we've calculated that already.
+                If Me.groupProperties.ContainsKey("cyclic") = True Then
+                    If Me.groupProperties.Item("cyclic") = True Then
+                        Me.groupProperties.Add("cyclic", True)
+                        Return True
+                    End If
+                End If
+
                 If Me.DerivedSubgroup.Operation.IsCommutative() = True Then
                     Me.groupProperties.Add("metabelian", True)
                     Return True
@@ -866,6 +929,32 @@ Namespace Algebra
                 End If
             Else
                 Return Me.groupProperties.Item("metabelian")
+            End If
+        End Function
+
+        Public Function IsMetacyclic() As Boolean
+            If Me.groupProperties.ContainsKey("metacyclic") = False Then
+                'Cyclic implies metacyclic, check to see if we've calculated that already.
+                If Me.groupProperties.ContainsKey("cyclic") Then
+                    If Me.groupProperties.Item("Cyclic") = True Then
+                        Me.groupProperties.Add("metacyclic", True)
+                        Return True
+                    End If
+                End If
+
+                Dim normalSubgroups As FiniteSet(Of FiniteGroup(Of T)) = Me.allNormalSubgroups
+                Dim subgroupIndex As Integer
+
+                For subgroupIndex = 0 To normalSubgroups.Cardinality - 1
+                    Dim curSubgroup As FiniteGroup(Of T) = normalSubgroups.Element(subgroupIndex)
+
+                    If curSubgroup.IsCyclic And Me.QuotientGroup(curSubgroup).IsCyclic Then
+                        Me.groupProperties.Add("metacyclic", True)
+                        Return True
+                    End If
+                Next subgroupIndex
+            Else
+                Return Me.groupProperties.Item("metacyclic")
             End If
         End Function
 
@@ -984,10 +1073,15 @@ Namespace Algebra
         ''' </summary>
         ''' <param name="superGroup">The supergroup (or ambient group) to test if this group is a normal subgroup of it.</param>
         ''' <returns>Returns <c>True</c> if the group is a normal subgroup of a given group, <c>False</c> otherwise.</returns>
-        ''' <remarks></remarks>
+        ''' <remarks>A subgroup is normal if and only if all left and right cosets coincide.</remarks>
         Public Function IsNormalSubgroupOf(ByVal superGroup As FiniteGroup(Of T)) As Boolean
             'First check to make sure it is a subgroup
             If Me.IsSubgroupOf(superGroup) = False Then Return False
+
+            'Check to see if it is the whole group, which is trivialy normal
+            If Me.Order = superGroup.Order Then
+                Return True
+            End If
 
             'Check to see if it is of index 2, which would quickly imply that it is normal
             If Me.SubgroupIndex(superGroup) = 2 Then
@@ -1030,7 +1124,7 @@ Namespace Algebra
         ''' </summary>
         ''' <param name="superGroup">The supergroup (or ambient group) to test if this group is a proper subgroup of it.</param>
         ''' <returns>Returns <c>True</c> if the group is a proper subgroup of a given group, <c>False</c> otherwise.</returns>
-        ''' <remarks></remarks>
+        ''' <remarks>A subgroup is proper if it not the whole group.</remarks>
         Public Function IsProperSubgroupOf(ByVal superGroup As FiniteGroup(Of T)) As Boolean
             'Check to make sure it is a subgroup
             If Me.IsSubgroupOf(superGroup) = False Then Return False
@@ -1183,7 +1277,7 @@ Namespace Algebra
         ''' </summary>
         ''' <param name="superGroup">The supergroup (or ambient group) to test if this group is a subgroup of it.</param>
         ''' <returns>Returns <c>True</c> if the group is a subgroup of a given group, <c>False</c> otherwise.</returns>
-        ''' <remarks></remarks>
+        ''' <remarks>A subgroup is a subset of the group and satisfies the definition of a group itself.</remarks>
         Public Function IsSubgroupOf(ByVal superGroup As FiniteGroup(Of T)) As Boolean
             If Me.theSet.IsSubsetOf(superGroup.theSet) = False Then Return False
 
@@ -1356,6 +1450,16 @@ Namespace Algebra
             Next index
 
             Return newSet
+        End Function
+
+        ''' <summary>
+        ''' Returns the normalizer (as a group) of a subgroup with respect to this group.
+        ''' </summary>
+        ''' <param name="subgroup">The subgroup whose normalizer is to be returned.</param>
+        ''' <returns>Returns the normalizer of a given subgroup as a <c>FiniteGroup</c>.</returns>
+        ''' <remarks>Uses the parallel version of <c>Noramlizer(subgroup, UseParallel)</c>.</remarks>
+        Public Function NormalizerSubgroup(ByVal subgroup As FiniteGroup(Of T)) As FiniteGroup(Of T)
+            Return New FiniteGroup(Of T)(Me.Normalizer(subgroup), Me.Operation)
         End Function
 
         ''' <summary>
@@ -1619,7 +1723,7 @@ Namespace Algebra
         ''' Returns the set of all maximal subgroups of this group (does NOT include improper subgroups).
         ''' </summary>
         ''' <returns>Returns the set of all maximal subgroups as a <c>FiniteSet</c>.</returns>
-        ''' <remarks></remarks>
+        ''' <remarks>A maximal subgroup is a proper subgroup that is not strictly contained by any other proper subgroup.</remarks>
         Public Function SetOfAllMaximalSubgroups() As FiniteSet(Of FiniteGroup(Of T))
             Dim newSet As New FiniteSet(Of FiniteGroup(Of T))
 
@@ -1811,6 +1915,7 @@ Namespace Algebra
             Return Me.Order / superGroup.Order
         End Function
 
+
         ''' <summary>
         ''' Returns the trivial subgroup of this group.
         ''' </summary>
@@ -1822,6 +1927,20 @@ Namespace Algebra
             Dim newOp As FiniteBinaryOperation(Of T) = Me.Operation.Restriction(newSet)
 
             Return New FiniteGroup(Of T)(newSet, newOp, Me.SubgroupClosedProperties)
+        End Function
+
+
+        ''' <summary>
+        ''' 
+        ''' </summary>
+        ''' <param name="superGroup"></param>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function WeylGroup(ByVal superGroup As FiniteGroup(Of T)) As FiniteGroup(Of FiniteSet(Of T))
+            Dim normalizer As FiniteGroup(Of T) = superGroup.NormalizerSubgroup(Me)
+            Dim centralizer As FiniteGroup(Of T) = superGroup.CentralizerSubgroup(Me)
+
+            Return normalizer.QuotientGroup(centralizer)
         End Function
 
 

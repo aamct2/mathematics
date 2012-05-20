@@ -12,3 +12,10 @@ D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\obj\Debug\ResolveA
 D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\obj\Debug\Mathematics.dll
 D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\obj\Debug\Mathematics.xml
 D:\Aaron\Documents\VB Projects\Mathematics - Beta\mathematics\obj\Debug\Mathematics.pdb
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Debug\Mathematics.dll
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Debug\Mathematics.pdb
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Debug\Mathematics.xml
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Debug\Mathematics.dll
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Debug\Mathematics.xml
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Debug\Mathematics.pdb

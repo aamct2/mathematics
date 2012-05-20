@@ -1,5 +1,6 @@
 
 Imports System.Collections.Generic
+Imports System.Threading.Tasks
 
 Namespace Algebra
 
@@ -336,6 +337,10 @@ Namespace Algebra
             End If
         End Function
 
+        Public Function HasMultiplicativeInverse() As Boolean
+
+        End Function
+
         ''' <summary>
         ''' Determines whether the ring is a boolean ring. In other words, all its elements are idempotent (with respect to multiplication).
         ''' </summary>
@@ -351,6 +356,19 @@ Namespace Algebra
             End If
 
             Return Me.ringProperties.Item("boolean")
+        End Function
+
+        ''' <summary>
+        ''' Determines whether the ring is a commutative ring. In other words, the multiplication operation is also commutative.
+        ''' </summary>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function IsCommutative() As Boolean
+            If Me.ringProperties.ContainsKey("commutative") = False Then
+                Me.ringProperties.Add("commutative", Me.MultiplicationOperation.IsCommutative)
+            End If
+
+            Return Me.ringProperties.Item("commutative")
         End Function
 
         ''' <summary>
@@ -658,6 +676,83 @@ Namespace Algebra
             End If
 
             Return Me.allTwoSidedIdeals.Clone()
+        End Function
+
+        ''' <summary>
+        ''' 
+        ''' </summary>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function SetOfAllLeftZeroDivisors() As FiniteSet(Of T)
+            Dim newSet As New FiniteSet(Of T)
+
+            Parallel.For(0, Me.theSet.Cardinality - 1, Sub(index)
+                                                           Dim elem As T = Me.theSet.Element(index)
+                                                           Dim elementIndex As Integer
+
+                                                           If (Me.AdditiveIdentity.Equals(elem) = False) Then
+                                                               For elementIndex = 0 To Me.theSet.Cardinality - 1
+                                                                   Dim curElem As T = Me.theSet.Element(elementIndex)
+
+                                                                   If (Me.AdditiveIdentity.Equals(curElem) = False) Then
+                                                                       Dim input As New Tuple(2)
+
+                                                                       input.Element(0) = elem
+                                                                       input.Element(1) = curElem
+
+                                                                       If Me.ApplyMultiplication(input).Equals(Me.AdditiveIdentity) Then
+                                                                           newSet.AddElement(elem)
+                                                                           Exit For
+                                                                       End If
+                                                                   End If
+                                                               Next elementIndex
+                                                           End If
+                                                       End Sub)
+
+            Return newSet
+        End Function
+
+        ''' <summary>
+        ''' 
+        ''' </summary>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function SetOfAllRightZeroDivisors() As FiniteSet(Of T)
+            Dim newSet As New FiniteSet(Of T)
+
+            Parallel.For(0, Me.theSet.Cardinality - 1, Sub(index)
+                                                           Dim elem As T = Me.theSet.Element(index)
+                                                           Dim elementIndex As Integer
+
+                                                           If (Me.AdditiveIdentity.Equals(elem) = False) Then
+                                                               For elementIndex = 0 To Me.theSet.Cardinality - 1
+                                                                   Dim curElem As T = Me.theSet.Element(elementIndex)
+
+                                                                   If (Me.AdditiveIdentity.Equals(curElem) = False) Then
+                                                                       Dim input As New Tuple(2)
+
+                                                                       input.Element(0) = curElem
+                                                                       input.Element(1) = elem
+
+                                                                       If Me.ApplyMultiplication(input).Equals(Me.AdditiveIdentity) Then
+                                                                           newSet.AddElement(elem)
+                                                                           Exit For
+                                                                       End If
+                                                                   End If
+                                                               Next elementIndex
+                                                           End If
+                                                       End Sub)
+
+            Return newSet
+        End Function
+
+        ''' <summary>
+        ''' Returns the set of all zero divisors (those that are both left and right zero divisors).
+        ''' </summary>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function SetOfAllZeroDivisors() As FiniteSet(Of T)
+            Return Me.SetOfAllLeftZeroDivisors.Intersection(Me.SetOfAllRightZeroDivisors)
         End Function
 
         ''' <summary>

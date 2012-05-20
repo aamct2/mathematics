@@ -55,6 +55,7 @@
     <Compile Include="Algebra\Finite Structures\FiniteRing.vb" />
     <Compile Include="Algebra\Finite Structures\FiniteSemigroup.vb" />
     <Compile Include="Algebra\Finite Structures\FiniteVectorSpace.vb" />
+    <Compile Include="Algebra\Finite Structures\Functions\FiniteGroupAction.vb" />
     <Compile Include="Algebra\Matrix.vb" />
     <Compile Include="Algebra\SquareMatrix.vb" />
     <Compile Include="Common\CommonExceptions.vb" />

@@ -1,4 +1,6 @@
 
+Imports System.Collections.Generic
+
 Namespace Algebra
 
     ''' <summary>
@@ -8,6 +10,8 @@ Namespace Algebra
     ''' <remarks></remarks>
     Public Class FiniteCommutativeRing(Of T As {Class, New, IEquatable(Of T)})
         Inherits FiniteRing(Of T)
+
+        Private commutativeRingProperties As New Dictionary(Of String, Boolean)
 
 #Region "  Constructors  "
 
@@ -30,6 +34,39 @@ Namespace Algebra
 #End Region
 
 #Region "  Methods  "
+
+        ''' <summary>
+        ''' 
+        ''' </summary>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Function IsIntegralDomain() As Boolean
+            If Me.commutativeRingProperties.ContainsKey("integral domain") = False Then
+                If Me.IsCommutative = False Then
+                    Me.commutativeRingProperties.Add("integral domain", False)
+                    Return False
+                End If
+
+                If Me.SetOfAllZeroDivisors.Cardinality > 0 Then
+                    Me.commutativeRingProperties.Add("integral domain", False)
+                    Return False
+                End If
+
+                If Me.theSet.Cardinality = 1 Then
+                    Me.commutativeRingProperties.Add("integral domain", False)
+                    Return False
+                End If
+
+                If Me.HasMultiplicativeInverse = False Then
+                    Me.commutativeRingProperties.Add("integral domain", False)
+                    Return False
+                End If
+
+                Me.commutativeRingProperties.Add("integral domain", True)
+            End If
+
+            Return Me.commutativeRingProperties.Item("integral domain")
+        End Function
 
         ''' <summary>
         ''' Determines whether a set is a prime ideal of this commutative ring.

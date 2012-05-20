@@ -12,3 +12,10 @@ D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\ResolveAssemb
 D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.dll
 D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.xml
 D:\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.pdb
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Release\Mathematics.dll
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Release\Mathematics.pdb
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\bin\Release\Mathematics.xml
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.dll
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.xml
+C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.pdb
