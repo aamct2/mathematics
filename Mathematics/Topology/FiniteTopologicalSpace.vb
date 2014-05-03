@@ -3,6 +3,11 @@ Imports System.Collections.Generic
 
 Namespace Topology
 
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <typeparam name="T"></typeparam>
+    ''' <remarks>Every finite topological space is compact.</remarks>
     Public Class FiniteTopologicalSpace(Of T As {Class, New, IEquatable(Of T)})
         Private mySet As FiniteSet(Of T)
         Private myTopology As FiniteSet(Of FiniteSet(Of T))
