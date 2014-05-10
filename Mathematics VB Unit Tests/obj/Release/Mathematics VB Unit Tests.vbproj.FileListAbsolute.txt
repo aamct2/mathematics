@@ -43,3 +43,15 @@ C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\R
 C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.dll
 C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.xml
 C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.pdb
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.dll
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.pdb
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics Unit Tests.xml
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics.dll
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics.pdb
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\bin\Debug\Mathematics.xml
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics VB Unit Tests.vbprojResolveAssemblyReference.cache
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics_Unit_Tests.Resources.resources
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics VB Unit Tests.vbproj.GenerateResource.Cache
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.dll
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.xml
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics VB Unit Tests\obj\Release\Mathematics Unit Tests.pdb

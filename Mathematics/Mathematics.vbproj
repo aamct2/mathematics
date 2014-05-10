@@ -77,6 +77,7 @@
     <Compile Include="Common\Sets\FiniteSet.vb" />
     <Compile Include="Common\Sets\OrderedPair.vb" />
     <Compile Include="Common\Sets\Tuple.vb" />
+    <Compile Include="Common\Zmod11.vb" />
     <Compile Include="Common\Zmod2.vb" />
     <Compile Include="Common\Zmod3.vb" />
     <Compile Include="Geometry\Circle.vb" />

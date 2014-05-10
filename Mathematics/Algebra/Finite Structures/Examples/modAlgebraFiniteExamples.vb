@@ -332,6 +332,104 @@ Namespace Algebra
         End Function
 
         ''' <summary>
+        ''' Returns the Janko Group J1 of order 175,560, as represented by 7x7 matrices with entries from Zmod11.
+        ''' </summary>
+        ''' <remarks>It's a simple sporadic group. http://en.wikipedia.org/wiki/Janko_group_J1</remarks>
+        Public Function Janko1Group() As FiniteGroup(Of SquareMatrix(Of Zmod11))
+            Dim index As Integer
+            Dim n As Integer = 11
+
+            Dim Zmod11Set As New FiniteSet(Of IntegerNumber)
+            Dim Zmod11Addition As FiniteBinaryOperation(Of IntegerNumber)
+            Dim Zmod11Group As FiniteGroup(Of IntegerNumber)
+
+            For index = 0 To n - 1
+                Zmod11Set.AddElement(New IntegerNumber(index))
+            Next index
+
+            Zmod11Addition = New FiniteBinaryOperation(Of IntegerNumber)(Zmod11Set, New ZmodNAdditionMap(New IntegerNumber(11)))
+            Zmod11Group = New FiniteGroup(Of IntegerNumber)(Zmod11Set, Zmod11Addition)
+
+            Dim Y As New SquareMatrix(Of Zmod11)(7)
+            Dim Z As New SquareMatrix(Of Zmod11)(7)
+
+            For index = 0 To 7 - 1
+                Y.Item(index, (index + 1) Mod 7) = New Zmod11(New IntegerNumber(1))
+            Next index
+
+            Z.Item(0, 0) = New Zmod11(New IntegerNumber(-3))
+            Z.Item(0, 1) = New Zmod11(New IntegerNumber(2))
+            Z.Item(0, 2) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(0, 3) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(0, 4) = New Zmod11(New IntegerNumber(-3))
+            Z.Item(0, 5) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(0, 6) = New Zmod11(New IntegerNumber(-3))
+
+            Z.Item(1, 0) = New Zmod11(New IntegerNumber(-2))
+            Z.Item(1, 1) = New Zmod11(New IntegerNumber(1))
+            Z.Item(1, 2) = New Zmod11(New IntegerNumber(1))
+            Z.Item(1, 3) = New Zmod11(New IntegerNumber(3))
+            Z.Item(1, 4) = New Zmod11(New IntegerNumber(1))
+            Z.Item(1, 5) = New Zmod11(New IntegerNumber(3))
+            Z.Item(1, 6) = New Zmod11(New IntegerNumber(3))
+
+            Z.Item(2, 0) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(2, 1) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(2, 2) = New Zmod11(New IntegerNumber(-3))
+            Z.Item(2, 3) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(2, 4) = New Zmod11(New IntegerNumber(-3))
+            Z.Item(2, 5) = New Zmod11(New IntegerNumber(-3))
+            Z.Item(2, 6) = New Zmod11(New IntegerNumber(2))
+
+            Z.Item(3, 0) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(3, 1) = New Zmod11(New IntegerNumber(-3))
+            Z.Item(3, 2) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(3, 3) = New Zmod11(New IntegerNumber(-3))
+            Z.Item(3, 4) = New Zmod11(New IntegerNumber(2))
+            Z.Item(3, 5) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(3, 6) = New Zmod11(New IntegerNumber(-1))
+
+            Z.Item(4, 0) = New Zmod11(New IntegerNumber(-3))
+            Z.Item(4, 1) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(4, 2) = New Zmod11(New IntegerNumber(-3))
+            Z.Item(4, 3) = New Zmod11(New IntegerNumber(-3))
+            Z.Item(4, 4) = New Zmod11(New IntegerNumber(2))
+            Z.Item(4, 5) = New Zmod11(New IntegerNumber(-1))
+            Z.Item(4, 6) = New Zmod11(New IntegerNumber(-1))
+
+            Z.Item(5, 0) = New Zmod11(New IntegerNumber(1))
+            Z.Item(5, 1) = New Zmod11(New IntegerNumber(3))
+            Z.Item(5, 2) = New Zmod11(New IntegerNumber(3))
+            Z.Item(5, 3) = New Zmod11(New IntegerNumber(-2))
+            Z.Item(5, 4) = New Zmod11(New IntegerNumber(1))
+            Z.Item(5, 5) = New Zmod11(New IntegerNumber(1))
+            Z.Item(5, 6) = New Zmod11(New IntegerNumber(3))
+
+            Z.Item(6, 0) = New Zmod11(New IntegerNumber(3))
+            Z.Item(6, 1) = New Zmod11(New IntegerNumber(3))
+            Z.Item(6, 2) = New Zmod11(New IntegerNumber(-2))
+            Z.Item(6, 3) = New Zmod11(New IntegerNumber(1))
+            Z.Item(6, 4) = New Zmod11(New IntegerNumber(1))
+            Z.Item(6, 5) = New Zmod11(New IntegerNumber(3))
+            Z.Item(6, 6) = New Zmod11(New IntegerNumber(1))
+
+            Dim matMultiply As New SquareMatrixNMultiplicationMap(Of Zmod11)(New IntegerNumber(7))
+            Dim generatorSet As New FiniteSet(Of SquareMatrix(Of Zmod11))
+            generatorSet.AddElement(Y)
+            generatorSet.AddElement(Z)
+
+            Dim jSet As FiniteSet(Of SquareMatrix(Of Zmod11))
+
+            jSet = FiniteGroup(Of SquareMatrix(Of Zmod11)).GeneratedSet(generatorSet, matMultiply)
+
+            Dim jOperation As New FiniteBinaryOperation(Of SquareMatrix(Of Zmod11))(jSet, matMultiply)
+
+            Dim J1Group As New FiniteGroup(Of SquareMatrix(Of Zmod11))(jSet, jOperation)
+
+            Return J1Group
+        End Function
+
+        ''' <summary>
         ''' The map corresoding to matrix addition of square matrices of size N.
         ''' </summary>
         ''' <typeparam name="T"></typeparam>

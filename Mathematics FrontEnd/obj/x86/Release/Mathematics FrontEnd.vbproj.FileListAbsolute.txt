@@ -40,6 +40,16 @@ C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Re
 C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics_FrontEnd.Resources.resources
 C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\GenerateResource.read.1.tlog
 C:\Users\Aaron\Documents\VB Projects\Mathematics\Mathematics FrontEnd\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.vbprojResolveAssemblyReference.cache
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics_FrontEnd.MainScreen.resources
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics_FrontEnd.Resources.resources
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.vbproj.GenerateResource.Cache
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\bin\Release\Mathematics FrontEnd.exe
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\bin\Release\Mathematics FrontEnd.pdb
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\bin\Release\Mathematics FrontEnd.xml
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\bin\Release\Mathematics.dll
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\bin\Release\Mathematics.pdb
+C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\bin\Release\Mathematics.xml
 C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.exe
 C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.xml
 C:\Users\Aaron\Documents\GitHub\mathematics\Mathematics FrontEnd\obj\x86\Release\Mathematics FrontEnd.pdb

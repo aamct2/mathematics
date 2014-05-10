@@ -21,6 +21,12 @@ Namespace Algebra
 
                 testField = Mathematics.Algebra.Zmod2Field
             End Sub
+
+            <Test()> Public Sub Janko1Group()
+                Dim testGroup As FiniteGroup(Of SquareMatrix(Of Zmod11))
+
+                testGroup = Mathematics.Algebra.Janko1Group
+            End Sub
         End Class
 
     End Namespace

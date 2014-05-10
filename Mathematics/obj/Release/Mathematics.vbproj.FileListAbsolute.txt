@@ -19,3 +19,9 @@ C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Resolve
 C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.dll
 C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.xml
 C:\Users\Aaron\Documents\VB Projects\Mathematics\mathematics\obj\Release\Mathematics.pdb
+C:\Users\Aaron\Documents\GitHub\mathematics\mathematics\bin\Release\Mathematics.dll
+C:\Users\Aaron\Documents\GitHub\mathematics\mathematics\bin\Release\Mathematics.pdb
+C:\Users\Aaron\Documents\GitHub\mathematics\mathematics\bin\Release\Mathematics.xml
+C:\Users\Aaron\Documents\GitHub\mathematics\mathematics\obj\Release\Mathematics.dll
+C:\Users\Aaron\Documents\GitHub\mathematics\mathematics\obj\Release\Mathematics.xml
+C:\Users\Aaron\Documents\GitHub\mathematics\mathematics\obj\Release\Mathematics.pdb

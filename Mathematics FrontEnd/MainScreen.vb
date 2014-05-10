@@ -11,12 +11,10 @@ Public Class MainScreen
     Private Zmod2Set As New FiniteSet(Of IntegerNumber)
     Private Zmod3Set As New FiniteSet(Of IntegerNumber)
     Private Zmod4Set As New FiniteSet(Of IntegerNumber)
-    Private Zmod11Set As New FiniteSet(Of IntegerNumber)
 
     Private Zmod2Addition As FiniteBinaryOperation(Of IntegerNumber)
     Private Zmod3Addition As FiniteBinaryOperation(Of IntegerNumber)
     Private Zmod4Addition As FiniteBinaryOperation(Of IntegerNumber)
-    Private Zmod11Addition As FiniteBinaryOperation(Of IntegerNumber)
 
     'Order: 2
     Private Zmod2Group As FiniteGroup(Of IntegerNumber)
@@ -26,9 +24,6 @@ Public Class MainScreen
 
     'Order: 4
     Private Zmod4Group As FiniteGroup(Of IntegerNumber)
-
-    'Order 11
-    Private Zmod11Group As FiniteGroup(Of IntegerNumber)
 
     'Order: 8
     Private Dih8Group As FiniteGroup(Of SquareMatrix(Of RealNumber))
@@ -58,6 +53,9 @@ Public Class MainScreen
     'Order: 27
     Private Heis3Group As FiniteGroup(Of SquareMatrix(Of Zmod3))
 
+    'Order: 175,560
+    Private J1Group As FiniteGroup(Of SquareMatrix(Of Zmod11))
+
     Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Me.GenerateCommonStructures()
     End Sub
@@ -75,6 +73,7 @@ Public Class MainScreen
         Dim Alt5Time As Date
         Dim Klein4Time As Date
         Dim Heis3Time As Date
+        Dim J1Time As Date
         Dim endTime As Date
 
         startTime = Now
@@ -125,6 +124,9 @@ Public Class MainScreen
         Heis3Group = Heisenberg3Group()
         Heis3Time = Now
 
+        J1Group = Janko1Group()
+        J1Time = Now
+
         'Dim zSet As New FiniteSet(Of IntegerNumber)
         'Dim zGrp As FiniteGroup(Of IntegerNumber)
         'Dim index As Integer
@@ -171,158 +173,12 @@ Public Class MainScreen
                                 "Alternating-4 Group: " & (Alt4Time - Alt3Time).ToString & vbCrLf & _
                                 "Alternating-5 Group: " & (Alt5Time - Alt4Time).ToString & vbCrLf & _
                                 "Klein-4 Group: " & (Klein4Time - Alt5Time).ToString & vbCrLf & _
-                                "Heisenberg-3 Group: " & (Heis3Time - Klein4Time).ToString
+                                "Heisenberg-3 Group: " & (Heis3Time - Klein4Time).ToString & vbCrLf & _
+                                "Janko 1 Group: " & (J1Time - Heis3Time).ToString
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdRunTest.Click
 
     End Sub
-
-
-    Private Sub GenerateJanko1Group()
-        Dim index As Integer
-        Dim n As Integer
-
-        For index = 0 To n - 1
-            Zmod11Set.AddElement(New IntegerNumber(index))
-        Next index
-
-        Zmod11Addition = New FiniteBinaryOperation(Of IntegerNumber)(Zmod11Set, New ZmodNAdditionMap(New IntegerNumber(11)))
-        Zmod11Group = New FiniteGroup(Of IntegerNumber)(Zmod11Set, Zmod11Addition)
-
-        Dim Y As New SquareMatrix(Of Zmod11)(7)
-        Dim Z As New SquareMatrix(Of Zmod11)(7)
-
-        For index = 0 To 7 - 1
-            Y.Item(index, (index + 1) Mod 7) = New Zmod11(New IntegerNumber(1))
-        Next index
-
-        Z.Item(0, 0) = New Zmod11(New IntegerNumber(-3))
-    End Sub
-End Class
-
-Friend Class Zmod11
-    Implements ISubtractable(Of Zmod11), IDivideable(Of Zmod11), IComparable(Of Zmod11), IAbsoluteable(Of Zmod11)
-
-    Private myValue As IntegerNumber
-
-#Region "  Constructors  "
-
-    Public Sub New()
-        Me.Value = New IntegerNumber(0)
-    End Sub
-
-    Public Sub New(ByVal newValue As IntegerNumber)
-        Me.Value = newValue Mod Zmod11.Integer11()
-    End Sub
-
-#End Region
-
-#Region "  Properties  "
-
-    Public Property Value() As IntegerNumber
-        Get
-            Return Me.myValue
-        End Get
-        Set(ByVal newValue As IntegerNumber)
-            Me.myValue = newValue
-        End Set
-    End Property
-
-    Public ReadOnly Property AdditiveIdentity() As Zmod11 Implements IAdditiveIdentity(Of Zmod11).AdditiveIdentity
-        Get
-            Return New Zmod11(New IntegerNumber(0))
-        End Get
-    End Property
-
-    Public ReadOnly Property MultiplicativeIdentity() As Zmod11 Implements IMultiplicativeIdentity(Of Zmod11).MultiplicativeIdentity
-        Get
-            Return New Zmod11(New IntegerNumber(1))
-        End Get
-    End Property
-
-#End Region
-
-#Region "  Methods  "
-
-    Private Shared Function Integer11() As IntegerNumber
-        Return New IntegerNumber(11)
-    End Function
-
-    Public Function AbsoluteValue() As Zmod11 Implements IAbsoluteable(Of Zmod11).AbsoluteValue
-        Return New Zmod11(Me.Value)
-    End Function
-
-    Public Function Add(ByVal otherT As Zmod11) As Zmod11 Implements IAddable(Of Zmod11).Add
-        Return New Zmod11((Me.Value + otherT.Value) Mod Zmod11.Integer11())
-    End Function
-
-    Public Function Divide(ByVal otherT As Zmod11) As Zmod11 Implements IDivideable(Of Zmod11).Divide
-        Return New Zmod11((Me.Value \ otherT.Value) Mod Zmod11.Integer11())
-    End Function
-
-    Public Function Multiply(ByVal otherT As Zmod11) As Zmod11 Implements IMultipliable(Of Zmod11).Multiply
-        Return New Zmod11((Me.Value * otherT.Value) Mod Zmod11.Integer11())
-    End Function
-
-    Public Function Subtract(ByVal otherT As Zmod11) As Zmod11 Implements ISubtractable(Of Zmod11).Subtract
-        Return New Zmod11((Me.Value - otherT.Value) Mod Zmod11.Integer11())
-    End Function
-
-    Public Function CompareTo(ByVal other As Zmod11) As Integer Implements System.IComparable(Of Zmod11).CompareTo
-        If Me.Value < other.Value Then
-            Return -1
-        ElseIf Me.Value = other.Value Then
-            Return 0
-        Else
-            Return 1
-        End If
-    End Function
-
-#End Region
-
-#Region "  Operators  "
-
-    Public Shared Operator +(ByVal lhs As Zmod11, ByVal rhs As Zmod11) As Zmod11
-        Return lhs.Add(rhs)
-    End Operator
-
-    Public Shared Operator -(ByVal lhs As Zmod11, ByVal rhs As Zmod11) As Zmod11
-        Return lhs.Subtract(rhs)
-    End Operator
-
-    Public Shared Operator *(ByVal lhs As Zmod11, ByVal rhs As Zmod11) As Zmod11
-        Return lhs.Multiply(rhs)
-    End Operator
-
-    Public Shared Operator /(ByVal lhs As Zmod11, ByVal rhs As Zmod11) As Zmod11
-        Return lhs.Divide(rhs)
-    End Operator
-
-    Public Shared Operator =(ByVal lhs As Zmod11, ByVal rhs As Zmod11) As Boolean
-        Return lhs.CompareTo(rhs) = 0
-    End Operator
-
-    Public Shared Operator <>(ByVal lhs As Zmod11, ByVal rhs As Zmod11) As Boolean
-        Return lhs.CompareTo(rhs) <> 0
-    End Operator
-
-    Public Shared Operator >(ByVal lhs As Zmod11, ByVal rhs As Zmod11) As Boolean
-        Return lhs.CompareTo(rhs) = 1
-    End Operator
-
-    Public Shared Operator <(ByVal lhs As Zmod11, ByVal rhs As Zmod11) As Boolean
-        Return lhs.CompareTo(rhs) = -1
-    End Operator
-
-    Public Shared Operator >=(ByVal lhs As Zmod11, ByVal rhs As Zmod11) As Boolean
-        Return (lhs.CompareTo(rhs) >= 0)
-    End Operator
-
-    Public Shared Operator <=(ByVal lhs As Zmod11, ByVal rhs As Zmod11) As Boolean
-        Return (lhs.CompareTo(rhs) <= 0)
-    End Operator
-
-#End Region
 
 End Class
